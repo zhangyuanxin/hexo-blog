@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>斯是陋室</title>
+  
+  <subtitle>读书  写作  摄影</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://uiplus.org/"/>
+  <updated>2018-12-23T17:07:02.457Z</updated>
+  <id>http://uiplus.org/</id>
+  
+  <author>
+    <name>远馨</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Nginx Setup</title>
+    <link href="http://uiplus.org/2018/12/24/2016-11-07-Nginx-Setup/"/>
+    <id>http://uiplus.org/2018/12/24/2016-11-07-Nginx-Setup/</id>
+    <published>2018-12-23T17:07:02.456Z</published>
+    <updated>2018-12-23T17:07:02.457Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://unsplash.it/2000/1200?image=1062" alt="nginx"></p><p>摘要: 使用源的方式安装nginx的操作方式. 安装环境是 阿里云Ubuntu Server 14.</p><ol><li><p>在源中添加资源</p><p>在/etc/apt/sources.lst中 添加下面两源：</p></li></ol><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">eb http:<span class="comment">//nginx.org/packages/mainline/ubuntu/ trusty nginx</span></div><div class="line">deb-src http:<span class="comment">//nginx.org/packages/mainline/ubuntu/ trusty nginx</span></div></pre></td></tr></table></figure><ol><li>添加key到文件中</li></ol><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">cd /etc/apt</div><div class="line">wget http:<span class="comment">//nginx.org/keys/nginx_signing.key</span></div><div class="line">apt-key add nginx_signing.key</div></pre></td></tr></table></figure><ol><li>安装nginx</li></ol><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">apt-get update</div><div class="line">apt-get install nginx</div></pre></td></tr></table></figure><ol><li>检查安装是否成功</li></ol><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/usr/sbin/nginx -V</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;https://unsplash.it/2000/1200?image=1062&quot; alt=&quot;nginx&quot;&gt;&lt;/p&gt;
+&lt;p&gt;摘要: 使用源的方式安装nginx的操作方式. 安装环境是 阿里云Ubuntu Server 14.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;
+      
+    
+    </summary>
+    
+      <category term="code" scheme="http://uiplus.org/categories/code/"/>
+    
+    
+      <category term="nginx" scheme="http://uiplus.org/tags/nginx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android UI</title>
+    <link href="http://uiplus.org/2017/07/02/2016-12-28-Android-UI-%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83/"/>
+    <id>http://uiplus.org/2017/07/02/2016-12-28-Android-UI-设计规范/</id>
+    <published>2017-07-02T06:48:19.000Z</published>
+    <updated>2017-07-02T06:48:19.000Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="首先，理解dp（dip）、px、sp、dpi、ppi、分辨率、屏幕尺寸"><a href="#首先，理解dp（dip）、px、sp、dpi、ppi、分辨率、屏幕尺寸" class="headerlink" title="# 首先，理解dp（dip）、px、sp、dpi、ppi、分辨率、屏幕尺寸"></a># 首先，理解dp（dip）、px、sp、dpi、ppi、分辨率、屏幕尺寸</h4><hr><ul><li><h5 id="单位：dp、dip、sp、px"><a href="#单位：dp、dip、sp、px" class="headerlink" title="单位：dp、dip、sp、px"></a><em>单位：dp、dip、sp、px</em></h5><ul><li><p>dp（Density-independent Pixels）：<strong>设备独立像素，又称设备无关像素，一种基于屏幕密度的抽象单位。</strong> <em>1dp=1/160英寸，dp的单位是英寸，dp的意义在于不同的设备上看起来效果一样大。</em>dip和dp含义相同。</p></li><li><p>sp（Scale Independent Pixels）：<strong>与dp类似，用户表示字号大小。</strong></p></li><li><p>px(Pixel):<strong>像素的缩写，像素是指基本原色素及其灰度的基本编码，由 Picture(图像) 和 Element（元素）这两个单词的字母所组成。</strong> <em>像素是电子影像中最小的图形单元。在UI中1像素代表1个网点（Dots）。如果在移动设备上使用像素作为单位，在屏幕小的设备上会出现放大失真现象，在屏幕大的设备上会出现缩小现象。</em></p></li></ul></li><li><h5 id="概念：分辨率、dpi、ppi、屏幕尺寸、屏幕密度比例"><a href="#概念：分辨率、dpi、ppi、屏幕尺寸、屏幕密度比例" class="headerlink" title="概念：分辨率、dpi、ppi、屏幕尺寸、屏幕密度比例"></a><em>概念：分辨率、dpi、ppi、屏幕尺寸、屏幕密度比例</em></h5><ul><li><p>分辨率（resolution）：<strong>指横纵2个方向的像素点的数量，目前最常见分辨率有：1280x720、1080x1920。</strong> <em>描述分辨率的单位有：（dpi点每英寸）、lpi（线每英寸）和ppi（像素每英寸）。但只有lpi是描述光学分辨率的尺度的。虽然dpi和ppi也属于分辨率范畴内的单位，但是他们的含义与lpi不同。而且lpi与dpi无法换算，只能凭经验估算。</em></p></li><li><p>dpi（Dots Per Inch）：<em>原为印刷上的计量单位，表示每英寸上能印刷出的网点数。</em>  <strong>对于UI界面而言，dpi含义等价于ppi，表示一英寸内有多少个点，这个点就是像素（Pixel）。</strong></p></li><li><p>ppi（Pixels Per Inch）：<strong>像素密度。</strong> *常见像素密度：120ppi、240ppi、320ppi。</p><p>计算公式：<code>(√长度像素数² + 宽度像素数²)/屏幕对角线英寸数</code></p></li><li><p>屏幕尺寸（Sreen Size）：<strong>屏幕对角线的长度。</strong> <em>目前常见尺寸有：4.7寸、5.0寸、5.5寸，小尺寸有：3.0、4.0、4.3，大尺寸有：5.7、6.0寸、6.5寸。</em></p></li><li><p><em>dp、px转换公式：</em><br>一般情况下，先根据分辨率计算出dpi，然后根据dpi和dp计算等价的px，sp、px计算类似。</p><p><code>px = dp * (dpi / 160)</code></p><p>注意理解：根据以上公式，可以看出来分辨率和像素密度没有直接关系。</p></li></ul></li></ul><p>扩展阅读：<br><a href="https://www.zhihu.com/question/21220154" target="_blank" rel="external">知乎：DPI、PPI、DP、PX 的详细计算方法及算法来源是什么？</a></p><hr><h4 id="Android设计规范"><a href="#Android设计规范" class="headerlink" title="# Android设计规范"></a># Android设计规范</h4><ul><li><h4 id="一、尺寸及分辨率"><a href="#一、尺寸及分辨率" class="headerlink" title="一、尺寸及分辨率"></a>一、尺寸及分辨率</h4><ul><li>目前而言，大致有五类（此处不涉及平板设备）：240*320、320*480、480*800、720*1280、1080*1920</li><li>原型设计有两种常用分辨率：<br>  -第一种，以320x480分辨率做原型设计，出来的图是1:1的，开发人员不用做px和dp转换。<br>  -第二种，以主流设备分辨率中最低值作为标准设计，目前以720X1280分辨率做原型设计，设计后px值的二分之一作为实际dp值。</li></ul></li></ul><table><thead><tr><th>密度类型</th><th style="text-align:center">分辨率</th><th style="text-align:center">像素密度</th><th style="text-align:center">换算关系</th><th style="text-align:center">启动图标</th><th style="text-align:center">操作栏图标</th><th style="text-align:center">上下文图标</th><th style="text-align:center">系统通知图标(白色)</th></tr></thead><tbody><tr><td>ldpi</td><td style="text-align:center">240*320px</td><td style="text-align:center">120dpi</td><td style="text-align:center">1dp=0.75px</td><td style="text-align:center">/</td><td style="text-align:center">/</td><td style="text-align:center">/</td><td style="text-align:center">/</td></tr><tr><td>mdpi</td><td style="text-align:center">320*480px</td><td style="text-align:center">160dpi</td><td style="text-align:center">1dp=1px</td><td style="text-align:center">48*48px</td><td style="text-align:center">32*32px</td><td style="text-align:center">16*16px</td><td style="text-align:center">24*24px</td></tr><tr><td>hdpi</td><td style="text-align:center">480*800px</td><td style="text-align:center">240dpi</td><td style="text-align:center">1dp=1.5px</td><td style="text-align:center">72*72px</td><td style="text-align:center">48*48px</td><td style="text-align:center">24*24px</td><td style="text-align:center">36*36px</td></tr><tr><td>xhdpi</td><td style="text-align:center">720*1280px</td><td style="text-align:center">320dpi</td><td style="text-align:center">1dp=2px</td><td style="text-align:center">96*96px</td><td style="text-align:center">72*72px</td><td style="text-align:center">32*32px</td><td style="text-align:center">48*48px</td></tr><tr><td>xxhdpi</td><td style="text-align:center">1080*1920px</td><td style="text-align:center">480dpi</td><td style="text-align:center">1dp=3px</td><td style="text-align:center">144*144px</td><td style="text-align:center">96*96px</td><td style="text-align:center">48*48px</td><td style="text-align:center">72*72px</td></tr></tbody></table><p>由上可见：</p><table><thead><tr><th>图标类型</th><th style="text-align:center">图标大小</th></tr></thead><tbody><tr><td>启动图标</td><td style="text-align:center">48*48dp</td></tr><tr><td>操作栏图标</td><td style="text-align:center">32*32dp</td></tr><tr><td>上下文图标</td><td style="text-align:center">16*16dp</td></tr><tr><td>系统通知图标</td><td style="text-align:center">24*24dp</td></tr></tbody></table><ul><li><h4 id="二、界面基本组成元素"><a href="#二、界面基本组成元素" class="headerlink" title="二、界面基本组成元素"></a>二、界面基本组成元素</h4><p>  界面包括：状态栏、导航栏、主菜单、内容区域</p><ul><li>Android中我们取用的720*1280的尺寸设计，那我们就说说在这个尺寸下这些元素的尺寸。</li><li>状态栏高度为：50px（25dp）</li><li>导航栏高度为：96px（48dp）</li><li>主菜单栏高度为：96px（48dp）</li><li>内容区域高度为：1038px(剩下区域)</li></ul></li><li><h4 id="三、字体大小"><a href="#三、字体大小" class="headerlink" title="三、字体大小"></a>三、字体大小</h4><p>  Android 上的字体为：Droid sans fallback。</p><p>  同样，百度用户体验的调查中，可以看出用户可接受的文字相应问题:<br>  <img src="/assets/images/2017-01-10/android_font_1.png" alt="android字体大小示例图"></p><p>  实际操作上：可以找自己喜欢的app界面，手机截图（高清）后放进PS自己对比调节字体大小。</p></li><li><h4 id="四，切图"><a href="#四，切图" class="headerlink" title="四，切图"></a>四，切图</h4>  Android设计规范中单位是dp，dp在安卓机上不同的密度转换后的px是不一样的，所以按照设计图的px转换成dp也是不一样的，这个可以使用转换工具转换，开发一般会有，也有些开发会使用px做单位，因为做了前期的转换工作</li><li><h4 id="五，颜色值问题"><a href="#五，颜色值问题" class="headerlink" title="五，颜色值问题"></a>五，颜色值问题</h4><p>  Android颜色值取值为十六进制的值 比如一绿色的值， 给开发的值为 #5bc43e</p></li><li><h4 id="六，推荐标注软件"><a href="#六，推荐标注软件" class="headerlink" title="六，推荐标注软件"></a>六，推荐标注软件</h4><p>  做UI出图的时候有时要常用标注，这里给大家推荐一款 Mark Man  这款软件是免费的，但如果要支持重复编辑是要购买注册版，但我们一般都是一次性标注完保存，如要再次编辑，就把保存的文件再放进去编辑一次就可以了</p></li><li><h5 id="七，推荐做法"><a href="#七，推荐做法" class="headerlink" title="七，推荐做法"></a>七，推荐做法</h5><ol><li><p>在layout文件中设置控件固定尺寸时采用dp，文字大小使用sp；</p></li><li><p>不要出现具体的像素值px。</p></li><li><p>不使用AbsoluteLayout(android1.5已废弃) ，可以使用RelativeLayout替代；</p></li><li><p>对不同的屏幕提供合适大小的图片。<br>low:medium:high:extra-high图片大小的比例为3:4:6:8；举例来说，对于中等密度(medium)的屏幕你的图片像素大小为48×48，那么低密度(low)屏幕的图片大小应为36×36，高(high)的为72×72，extra-high为96×96。</p></li></ol></li><li><h5 id="八，Google官方推荐设计规范"><a href="#八，Google官方推荐设计规范" class="headerlink" title="八，Google官方推荐设计规范"></a>八，Google官方推荐设计规范</h5><p>当下Google推荐的是 <a href="https://material.io/" target="_blank" rel="external">Material Design</a> : 材料设计语言，是由Google推出了全新的设计语言，谷歌表示，这种设计语言旨在为手机、平板电脑、台式机和“其他平台”提供更一致、更广泛的“外观和感觉”。</p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;首先，理解dp（dip）、px、sp、dpi、ppi、分辨率、屏幕尺寸&quot;&gt;&lt;a href=&quot;#首先，理解dp（dip）、px、sp、dpi、ppi、分辨率、屏幕尺寸&quot; class=&quot;headerlink&quot; title=&quot;# 首先，理解dp（dip）、px、sp、d
+      
+    
+    </summary>
+    
+      <category term="code" scheme="http://uiplus.org/categories/code/"/>
+    
+    
+      <category term="android" scheme="http://uiplus.org/tags/android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VI Commands</title>
+    <link href="http://uiplus.org/2017/07/02/2016-05-28-Vi-Editor-Commands/"/>
+    <id>http://uiplus.org/2017/07/02/2016-05-28-Vi-Editor-Commands/</id>
+    <published>2017-07-02T06:48:19.000Z</published>
+    <updated>2017-07-02T06:48:19.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>由于最近工作经常要用到linux系统，但是命令都不是太熟悉，现在开始慢慢总结，不断练习，不断学习吧！</p></blockquote><h4 id="vi的使用教程（比较适合新手学习vi）："><a href="#vi的使用教程（比较适合新手学习vi）：" class="headerlink" title="# vi的使用教程（比较适合新手学习vi）："></a><a name="1" style="color:green;cursor: pointer">#</a> vi的使用教程（比较适合新手学习vi）：</h4><ol><li><a href="#1">为什么要学习vi命令</a></li><li><a href="#2">vi使用模式</a></li><li><a href="#3">vi常用命令</a></li><li><a href="#4">文件的打开关闭保存</a></li><li><a href="#5">插入文本或新建行</a></li><li><a href="#6">移动光标、删除、恢复字符或行</a></li><li><a href="#7">搜索</a></li><li><a href="#8">其他</a></li></ol><h4 id="为什么要学习vi命令-？"><a href="#为什么要学习vi命令-？" class="headerlink" title="# 为什么要学习vi命令 ？"></a><a name="1" style="color:green;cursor: pointer">#</a> 为什么要学习vi命令 ？</h4><p><code>vi</code>是visual interface的缩写，<code>vim</code>是vi IMproved(增强版的vi)。</p><ul><li>Linux很多发行版默认都安装了vi(vim)。</li><li>vi/vim是Linux上最常用且很流行的编辑器（除此之外还有emacs、atom等）。</li><li>熟练使用vi命令可以提高工作效率。</li><li>vim可以使代码高亮显示。</li></ul><h4 id="vi有3个模式：插入模式、命令模式、低行模式"><a href="#vi有3个模式：插入模式、命令模式、低行模式" class="headerlink" title="# vi有3个模式：插入模式、命令模式、低行模式"></a><a name="2" style="color:green;cursor: pointer">#</a> vi有3个模式：插入模式、命令模式、低行模式</h4><ul><li>插入模式：在此模式下可以输入字符，按ESC将回到命令模式。</li><li>命令模式：可以移动光标、删除字符等。</li><li>低行模式：可以保存文件、退出vi、设置vi、查找等功能(低行模式也可以看作是命令模式里的)。</li></ul><h4 id="vi常用命令"><a href="#vi常用命令" class="headerlink" title="# vi常用命令"></a><a name="3" style="color:green;cursor: pointer">#</a> vi常用命令</h4><p>1.<a name="4" style="color:black;text-decoration:none"></a>文件的打开、保存、关闭操作(vi命令模式下使用)</p><table><thead><tr><th>命令</th><th>释义说明</th></tr></thead><tbody><tr><td><code>vi [file]</code></td><td>打开file文件</td></tr><tr><td><code>:w</code></td><td>保存文件</td></tr><tr><td><code>:w [file]</code></td><td>保存至file文件</td></tr><tr><td><code>:q</code></td><td>退出编辑器(未修改)</td></tr><tr><td><code>:q!</code></td><td>退出编辑器（不保存修改）</td></tr><tr><td><code>:wq</code></td><td>退出编辑器（保存修改）</td></tr></tbody></table><p>2.<a name="5" style="color:black;text-decoration:none"></a>插入模式：插入文本或行(vi命令模式下使用，执行下面命令后将进入插入模式，按ESC键可退出插入模式)</p><table><thead><tr><th>命令</th><th>释义说明</th></tr></thead><tbody><tr><td>a</td><td>在当前光标位置的右边添加文本</td></tr><tr><td>i</td><td>在当前光标位置的左边添加文本</td></tr><tr><td>A</td><td>在当前行的末尾位置添加文本</td></tr><tr><td>I</td><td>在当前行的开始处添加文本(非空字符的行首)</td></tr><tr><td>O</td><td>在当前行的上面新建一行</td></tr><tr><td>o</td><td>在当前行的下面新建一行</td></tr><tr><td>R</td><td>替换(覆盖)当前光标位置及后面的若干文本</td></tr><tr><td>J</td><td>合并光标所在行及下一行为一行(依然在命令模式)</td></tr></tbody></table><p>3.<a name="5" style="color:black;text-decoration:none"></a>移动光标(vi命令模式下使用)</p><ul><li><p>使用上下左右方向键</p></li><li><p>命令模式下：</p></li></ul><table><thead><tr><th>命令</th><th>释义说明</th></tr></thead><tbody><tr><td>h</td><td>向左</td></tr><tr><td>j</td><td>向下</td></tr><tr><td>k</td><td>向上</td></tr><tr><td>l</td><td>向右</td></tr><tr><td>空格键</td><td>向右</td></tr><tr><td>Backspace</td><td>向左</td></tr><tr><td>Enter</td><td>移动到下一行首</td></tr><tr><td>-</td><td>移动到上一行首</td></tr></tbody></table><p>4.<a name="6" style="color:black;text-decoration:none"></a>删除、恢复字符或行(vi命令模式下使用)</p><table><thead><tr><th>命令</th><th>释义说明</th></tr></thead><tbody><tr><td>x</td><td>删除当前字符</td></tr><tr><td>nx</td><td>删除从光标开始的n个字符</td></tr><tr><td>dd</td><td>删除当前行</td></tr><tr><td>ndd</td><td>向下删除当前行在内的n行</td></tr><tr><td>u</td><td>撤销上一步操作</td></tr><tr><td>U</td><td>撤销对当前行的所有操作</td></tr></tbody></table><p>5.<a name="7" style="color:black;text-decoration:none"></a>搜索(vi命令模式下使用)</p><table><thead><tr><th>命令</th><th>释义说明</th></tr></thead><tbody><tr><td>/abc</td><td>向光标下搜索abc字符串</td></tr><tr><td>?abc</td><td>向光标上搜索abc字符串</td></tr><tr><td>n</td><td>向下搜索前一个搜素动作</td></tr><tr><td>N</td><td>向上搜索前一个搜索动作</td></tr></tbody></table><p>6.<a name="8" style="color:black;text-decoration:none"></a>跳至指定行(vi命令模式下使用)</p><table><thead><tr><th>命令</th><th>释义说明</th></tr></thead><tbody><tr><td>n+</td><td>向下跳n行</td></tr><tr><td>n-</td><td>向上跳n行</td></tr><tr><td>nG</td><td>跳到行号为n的行</td></tr><tr><td>G</td><td>跳至文件的底部</td></tr></tbody></table><p>7.<a name="9" style="color:black;text-decoration:none"></a>设置行号(vi命令模式下使用)</p><table><thead><tr><th>命令</th><th>释义说明</th></tr></thead><tbody><tr><td>:set nu</td><td>显示行号</td></tr><tr><td>:set nonu</td><td>取消显示行号</td></tr></tbody></table><p>8.<a name="10" style="color:black;text-decoration:none"></a>复制、粘贴(vi命令模式下使用)</p><table><thead><tr><th>命令</th><th>释义说明</th></tr></thead><tbody><tr><td>yy</td><td>将当前行复制到缓存区，也可以用 “ayy 复制，”a 为缓冲区，a也可以替换为a到z的任意字母，可以完成多个复制任务。</td></tr><tr><td>nyy</td><td>将当前行向下n行复制到缓冲区，也可以用 “anyy 复制，”a 为缓冲区，a也可以替换为a到z的任意字母，可以完成多个复制任务。</td></tr><tr><td>yw</td><td>复制从光标开始到词尾的字符。</td></tr><tr><td>nyw</td><td>复制从光标开始的n个单词。</td></tr><tr><td>y^</td><td>复制从光标到行首的内容。</td></tr><tr><td>y$</td><td>复制从光标到行尾的内容。</td></tr><tr><td>p</td><td>粘贴剪切板里的内容在光标后，如果使用了前面的自定义缓冲区，建议使用”ap 进行粘贴。</td></tr><tr><td>P</td><td>粘贴剪切板里的内容在光标前，如果使用了前面的自定义缓冲区，建议使用”aP 进行粘贴。</td></tr></tbody></table><p>9.<a name="11" style="color:black;text-decoration:none"></a>替换(vi命令模式下使用)</p><table><thead><tr><th>命令</th><th>释义说明</th></tr></thead><tbody><tr><td>:s/old/new</td><td>用new替换行中首次出现的old</td></tr><tr><td>:s/old/new/g</td><td>用new替换行中所有的old</td></tr><tr><td>:n,m s/old/new/g</td><td>用new替换从n到m行里所有的old</td></tr><tr><td>:%s/old/new/g</td><td>用new替换当前文件里所有的old</td></tr></tbody></table><p>10.<a name="12" style="color:black;text-decoration:none"></a>编辑其他文件</p><table><thead><tr><th>命令</th><th>释义说明</th></tr></thead><tbody><tr><td>:e otherfilename</td><td>编辑文件名为otherfilename的文件。</td></tr></tbody></table><p>11.<a name="13" style="color:black;text-decoration:none"></a>修改文件格式</p><table><thead><tr><th>命令</th><th>释义说明</th></tr></thead><tbody><tr><td>:set fileformat=unix</td><td>将文件修改为unix格式，如win下面的文本文件在linux下会出现^M。</td></tr></tbody></table><blockquote><p>总结：vi(vim)虽然有比较多的命令，但是只要勤加练习，相信你会很快的熟练掌握，同时也会给你的工作或学习带来更高的效率。<br>当如果不知道自己处在什么模式时可以按2次Esc键即可回到命令模式。<br>最后提醒一点：注意大小写！！</p></blockquote><p>参考连接：<a href="http://www.vpser.net/manage/vi.html" target="_blank" rel="external">Linux上vi(vim)编辑器使用教程</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;由于最近工作经常要用到linux系统，但是命令都不是太熟悉，现在开始慢慢总结，不断练习，不断学习吧！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;vi的使用教程（比较适合新手学习vi）：&quot;&gt;&lt;a href=&quot;#vi的使用教程（比较适合新手学
+      
+    
+    </summary>
+    
+      <category term="code" scheme="http://uiplus.org/categories/code/"/>
+    
+    
+      <category term="linux" scheme="http://uiplus.org/tags/linux/"/>
+    
+      <category term="vim" scheme="http://uiplus.org/tags/vim/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Personal Plans</title>
+    <link href="http://uiplus.org/2017/07/02/2016-09-28-Personal-Plans/"/>
+    <id>http://uiplus.org/2017/07/02/2016-09-28-Personal-Plans/</id>
+    <published>2017-07-02T06:48:19.000Z</published>
+    <updated>2017-07-02T06:48:19.000Z</updated>
+    
+    <content type="html"><![CDATA[<div id="toc"></div><h2 id="关于自己的愿望"><a href="#关于自己的愿望" class="headerlink" title="关于自己的愿望"></a>关于自己的愿望</h2><p><i class="fa fa-quote-left fa-3x"></i> 关于个人计划，大多数人应该都制定过。本人尝试过制定并完成一些，但是大部分都是十分钟热度，真正执行的没有几个，多半执行一段时间就会感觉疲劳或者忘记了，针对这些希望自己整理一下自己近阶段希望做的一些事情和计划，以免将来后悔莫及。”</p><h2 id="读书"><a href="#读书" class="headerlink" title="# 读书"></a># 读书</h2><blockquote><p>读万卷书</p></blockquote><ol><li>近期读书列表：</li></ol><ul><li>《java编程思想》</li><li>《java高级特性》</li><li>《编程珠玑》</li><li>《设计模式》</li><li>《重构》</li><li>《jquery基础教程》</li></ul><h2 id="旅游"><a href="#旅游" class="headerlink" title="# 旅游"></a># 旅游</h2><blockquote><p>行万里路</p></blockquote><ol><li>未去的地方：</li></ol><ul><li>南京（古建筑、先锋书店）</li><li>杭州（杭州西湖、建筑）</li><li>厦门（鼓浪屿、厦门大学）</li><li>成都（九寨沟）</li><li>西藏（雪山、青海湖的青稞）</li><li>内蒙古（草原）</li><li>三亚（潜水）</li></ul><ol><li>去过的地方：</li></ol><ul><li>大连</li><li>青岛</li><li>济南</li><li>北京</li><li>广州</li><li>泰安</li></ul><p>最想去的国家：</p><ul><li>日本</li><li>德国</li><li>美国</li></ul><p>最想移民的国家：</p><ul><li>德国</li></ul><h2 id="生活"><a href="#生活" class="headerlink" title="# 生活"></a># 生活</h2><blockquote><p>生活源于折腾</p></blockquote><ul><li>驾照</li><li>购房</li><li>女票</li></ul><p>作息调整：朝8 - 晚10</p><p>饮食调整：制定合理的食谱，早餐、午餐、晚餐</p><p>运动调整：跑步、篮球、羽毛球、乒乓球</p><p>健身计划：报名参加健身俱乐部</p><p>自闭症&amp;抑郁症：多出去走走，听听繁杂的世界</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;div id=&quot;toc&quot;&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;关于自己的愿望&quot;&gt;&lt;a href=&quot;#关于自己的愿望&quot; class=&quot;headerlink&quot; title=&quot;关于自己的愿望&quot;&gt;&lt;/a&gt;关于自己的愿望&lt;/h2&gt;&lt;p&gt;&lt;i class=&quot;fa fa-quote-left f
+      
+    
+    </summary>
+    
+      <category term="plan" scheme="http://uiplus.org/categories/plan/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Android Problems</title>
+    <link href="http://uiplus.org/2017/07/02/2016-11-16-Android-Setup-Problems/"/>
+    <id>http://uiplus.org/2017/07/02/2016-11-16-Android-Setup-Problems/</id>
+    <published>2017-07-02T06:48:19.000Z</published>
+    <updated>2017-07-02T06:48:19.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Problem 1：</p><p>When you click ‘debug’ button，it will tips like below.</p><p>当点击debug按钮的时候，安装apk时提示内存不足。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">com.android.ddmlib.SyncException: No space left on device</div><div class="line">Error <span class="keyword">while</span> Installing APK</div></pre></td></tr></table></figure><p>Solution：</p><p>Problem 2：</p><p>When you update android studio，it will tips like below.<br>当你更新Android Studio IDE的时候，会提示无法连接到android附加列表，天朝的墙太厚了。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">unable to access android add-on list</div></pre></td></tr></table></figure><p>Solution：Please click ‘Cancel’ button，</p><p>Problem 3：</p><p>当新建Android项目时，如果Project路径含有中文或者非英文字体时，就会提示以下错误信息。<br>由此引发的启示：程序员的良好习惯应该所有的开发目录都是英文</p><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Error:(<span class="number">1</span>, <span class="number">0</span>) Your project path contains non-ASCII characters. This will most likely cause the build to fail on Windows. Please move your project to a different directory.</div></pre></td></tr></table></figure><p>Solution：Please move the project directory to a English-directory.</p><p>Problem 4：<br>Android AVD 默认目录调整：</p><p>Android模拟器，AVD默认保存在C:\Documents and Settings\Administrator.android\avd，后来想改路径，找了很久终于找到了方法，亲测成功。<br>方法是：</p><p>1、比如你要把AVD放在D盘AndroidAVD下面，则预先在D盘下建立一个文件夹 AndroidAVD。必须的。不然设置了环境变量也没有用，因为模拟器不会自动创建该文件夹。</p><p>2、在桌面右击“我的电脑”选择“属性”，进入“高级—-环境变量—–系统变量—-新建“，从而新建一个环境变量ANDROID_SDK_HOME，变量值设置为：D:\AndroidAVD。如图所示。一路确定下来，保存环境变量。重新启动计算机。</p><p>3、如果你以前没有AVD，则启动AVD Manager新建一个AVD，则文件会全部保存到 D:\AndroidAVD下面。第4点不用看了。</p><p>4、如果你以前有AVD，改了路径后想继续用，则要把原来C:\Documents and Settings\Administrator.android\avd下面的全部文件夹复制到 D:\AndroidAVD下面，把avd下面的.ini文件里面的路径 C:\Documents and Settings\Administrator.android\avd部分全部改成D:\AndroidAVD.android\avd。再进一个以.AVD结尾的文件夹改下面的hardware-qemu.ini这个文件里面的路径 C:\Documents and Settings\Administrator.android\avd部分全部改成D:\AndroidAVD.android\avd。<br>这2个ini文件里面的路径不改光复制文件过去没有用的，AVD Manager会报错且会删除复制过来的所有avd文件，但并不会删除和影响C:\Documents and Settings\Administrator.android\avd下面的文件。</p><p>为保险，建议新的AVD启动正常能进安卓系统了以后，再把原来C:\Documents and Settings\Administrator.android\avd下面的所有文件删除即可。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Problem 1：&lt;/p&gt;
+&lt;p&gt;When you click ‘debug’ button，it will tips like below.&lt;/p&gt;
+&lt;p&gt;当点击debug按钮的时候，安装apk时提示内存不足。&lt;/p&gt;
+&lt;figure class=&quot;highlight 
+      
+    
+    </summary>
+    
+      <category term="code" scheme="http://uiplus.org/categories/code/"/>
+    
+    
+      <category term="android" scheme="http://uiplus.org/tags/android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>The Youth Day</title>
+    <link href="http://uiplus.org/2017/07/02/2016-05-04-%E7%AC%AC24%E4%B8%AA%E4%BA%94%E5%9B%9B%E9%9D%92%E5%B9%B4%E8%8A%82/"/>
+    <id>http://uiplus.org/2017/07/02/2016-05-04-第24个五四青年节/</id>
+    <published>2017-07-02T06:48:19.000Z</published>
+    <updated>2017-07-02T06:48:19.000Z</updated>
+    
+    <content type="html"><![CDATA[<pre><code>今天终于搭建起了自己的Blog了，了却了建立博客的心结，也算是一种欣慰，期间的折腾就不一一细说了。</code></pre><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;有时候想写某些东西出来的时候，又不想被所有的朋友看到，至少不像在公众社交软件上发表<br>某些东西后，引人议论或是被各种调侃。当然这种想法或许本身就有问题，对于某些人而言既然想写，<br>又何必在乎别人的看法呢？现在虽然不是第一次写博客，却是第一次在自己的博客网站上写博客，<br>Fighting！</p><p>  馨</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;pre&gt;&lt;code&gt;今天终于搭建起了自己的Blog了，了却了建立博客的心结，也算是一种欣慰，期间的折腾就不一一细说了。
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;有时候想写某些东西出来的时候，又不想被所有的朋友看到，
+      
+    
+    </summary>
+    
+      <category term="life" scheme="http://uiplus.org/categories/life/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Photoshop</title>
+    <link href="http://uiplus.org/2017/07/02/2016-11-19-Photoshop-And-Chinese-Crafts/"/>
+    <id>http://uiplus.org/2017/07/02/2016-11-19-Photoshop-And-Chinese-Crafts/</id>
+    <published>2017-07-02T06:48:19.000Z</published>
+    <updated>2017-07-02T06:48:19.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/assets/images/2016-11-19/jobs-crafts.jpg" alt="works"></p><blockquote><p>   摘要: 书画，是书与画的组合体，在中国是指书法、国画的统称。书法是伴随着汉字的产生而产生，又伴随着汉字的发展而发展。它从图画，符号到创造、定型，由大篆到小篆，由篆而隶、楷、行、草各种文字形体逐渐形成。中国画注重达意畅神与线条造型，讲究法书用笔和笔墨关系，以结构组织为主，色彩明暗为辅，诗、书、印、款识与画意结合为艺术特征。其绘画形式有大写意、小写意、工笔、界画、泼彩等，其表现形式有长卷、中堂、卷轴、册页、扇面等。以下是一个书法字画的Photoshop简单制作教程分享给大家，主要知识点：图层（Layer）、字体(Fonts)、选区工具(Select)、移动工具（Move）、滤镜（Filter）等.</p></blockquote><ul><li><p><strong>第一步，创建画布：</strong></p><p>打开文件(F)菜单，选择新建(N)，创建一个宽100cm，高36cm的画布：</p><p><img src="/assets/images/2016-11-19/canvas-complete.png" alt="canvas-complete"></p><blockquote><p>知识点：从纸张上，书画可分为长卷、中堂、卷轴、册页、扇面等；从文字排列形式上，书画可分为横、纵、方和扁形四种。 其中以横、纵居多，横者装裱后更为好看些。</p></blockquote></li><li><p><strong>第二步，制作宣纸：</strong></p><p>选取一张中意的宣纸图片作为原材料，经过剪切复制等加工处理，铺满整个画布。</p><p><img src="/assets/images/2016-11-19/paper-complete.png" alt="paper-complete"></p><blockquote><p>知识点：宣纸，按加工方法分类，宣纸分为一般可分为<code>生宣</code>，<code>熟宣</code>、<code>半熟宣</code>三种。按用料配比不同分类，又可分为<code>棉料</code>、<code>皮料</code>、<code>将净</code>三类。其中又有单宣、夹宣、二层、三层等之分，规格上有4尺、6尺、8尺、丈二、丈四、丈八等。选择上建议选择颜色单一，杂色较少的作为原材料，利于剪切拼接。</p></blockquote></li><li><p><strong>第三步，选取书画内容，如诗歌或名言。</strong><br><img src="/assets/images/2016-11-19/word-complete.png" alt="word-complete"></p><blockquote><p>知识点：建议选取名人书法字体，其一有很高的视觉美感，其二让人有熟悉感，常用字体有方正、叶根友等字体，按照书法家分有毛泽东、王羲之、颜真卿等，本例选择王羲之字体。</p></blockquote></li><li><p><strong>第四步，制作印章，加盖在字画两端：</strong></p><p>首先，制作印章周围的红圈，确定印章范围。使用选区工具，选好之后，点击菜单编辑&gt;&gt;描边，制作红圈效果。</p><p>其次，制作印章内容，以“姓名+印”形式居多。</p><p>最后，使用滤镜制作印章效果，滤镜&gt;&gt;素描&gt;&gt;撕边，滤镜&gt;&gt;画笔描边&gt;&gt;喷溅，制作出印章盖在宣纸上的效果。</p><p>姓名章：</p><p><img src="/assets/images/2016-11-19/name-sign.png" alt="name-sign"></p><p>引首章：</p><p><img src="/assets/images/2016-11-19/head-sign.png" alt="head-sign"></p><blockquote><p>知识点：书法作品上常用的几种印章有姓名章、闲章、鉴藏章。印章最初是信物，起印证作用。宋、元以后，因注重了书画题跋和署款，书家们逐渐认识到印章的艺术作用并注意在书法作品中发挥这一作用，使书、印合璧的艺术得以形成。书法作品上的印章，是书法作品中不可缺少的组成部分，缺了印章就不成为完整的书法作品。</p></blockquote><p>1）姓名章：姓名章的形状以“方形最好，圆形还可，若腰圆天然形等都不可用。” 姓名章一般分朱文（阳文）白文（阴文）两种。一幅书法作品上盖两方姓名章时，最好一朱一白，两章大小相宜。款尾用多章时，次序是先姓名章，后字、号章。</p><p>2）闲章：闲章亦称布局章，包括引首章、拦边章、压角章和腰章。比如：引首章通常盖在作品左上角，作为整体布局装饰，破除太严肃作品的死板格局等</p><p>3）鉴藏章：鉴藏章是鉴赏收藏者用章。</p></li><li><p><strong>另外，可以将制作好的印章存储为笔刷（Brush），以备后续使用。</strong></p><p>首先，选中印章选取，按住Ctrl+鼠标左键点击印章图层。</p><p>其次，点击菜单编辑&gt;&gt;定义为画笔预设,完成画笔制作。</p><p>最后，点击画笔工具，选择该笔刷后，即可使用盖章。</p><p><img src="/assets/images/2016-11-19/brush.png" alt="brush"></p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;/assets/images/2016-11-19/jobs-crafts.jpg&quot; alt=&quot;works&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;   摘要: 书画，是书与画的组合体，在中国是指书法、国画的统称。书法是伴随着汉字的产生而产生，又伴随
+      
+    
+    </summary>
+    
+      <category term="art" scheme="http://uiplus.org/categories/art/"/>
+    
+    
+      <category term="photoshop" scheme="http://uiplus.org/tags/photoshop/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Photography</title>
+    <link href="http://uiplus.org/2017/07/02/2016-12-06-Sony-rx100%20III-photo-note-part-1/"/>
+    <id>http://uiplus.org/2017/07/02/2016-12-06-Sony-rx100 III-photo-note-part-1/</id>
+    <published>2017-07-02T06:48:19.000Z</published>
+    <updated>2017-07-02T06:48:19.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="影像尺寸"><a href="#影像尺寸" class="headerlink" title="影像尺寸"></a>影像尺寸</h3><p>分20M、10M、5M，这里不是指文件大小，而是指2000万像素、1000万像素、500万像素,M=Million（百万）。</p><p>无论选哪个拍摄和存储速度是一样的。1000万和500万像素是从2000万像素缩放而来的，和软件缩放效果一样的，所以100%看比2000万像素清晰些，噪点也少些。但如果把他们再放大到2000万像素，和原先拍的2000万像素比较就要差一些了，所以一般情况下选2000万像素。以下情况选500万像素：</p><ul><li><p>你拍到卡快满了，到没备用卡，又实在不想删一些照片。</p></li><li><p>拍一些纸质文字，比如翻拍个日记啥的，500万像素已经很够了，再多也是浪费。</p></li><li><p>急需上传到网络且画质要求不高的。像素越少文件越小，上传越快。</p></li><li><p>喜欢100%看图且忍受不了噪点的，黑卡的500万像素同ISO下噪点相当于1600万像素的APS-C相机，还是较干净的，黑卡1000万像素ISO125下也是有明显噪点的。</p></li></ul><h4 id="1-什么是iso"><a href="#1-什么是iso" class="headerlink" title="1. 什么是iso ?"></a>1. 什么是iso ?</h4><p>定义：iso是由ISO国际标准组织制定的数码相机感光度量化规定。ISO感光度是衡量传统相机所使用胶片感光速度标准的国际统一指标，其反映了胶片感光时的速度（其实是银元素与光线的光化学反应速度）。</p><p>简言之，针对数码相机而言，就是感光原件（CMOS或者CCD）的感光速度。ISO数值越高就说明该感光材料的感光能力越强。</p><p>公式：ISO的计算公式为S=0.8/H（S感光度，H为曝光量）。从公式中我们可以看出，感光度越高，对曝光量的要求就越少。</p><p>特点：ISO数值越高曝光越厉害，噪点越多，看起来越模糊。</p><h4 id="2-什么是APS-C相机"><a href="#2-什么是APS-C相机" class="headerlink" title="2.什么是APS-C相机 ?"></a>2.什么是APS-C相机 ?</h4><p>定义：APS-C相机就是所谓的半幅相机,是目前单反主流格式。数码单反相机的CMOS和 CCD（图像传感器）很多都是“APS-C”画幅。通常是说感光元件尺寸小于35mm胶卷尺寸（36mm x 24mm）的数码相机。</p><p><img src="/assets/images/2016-12-06/aps-cmos.jpg" alt="aps-c"></p><p>分类：APS定位于业余消费市场，共设计了三种底片画幅(H、C、P)：</p><p><img src="/assets/images/2016-12-06/aps-c.jpg" alt="aps-c"></p><ul><li>H型是满画幅(30.3×16.6mm)，长宽比为16:9；</li><li>C型是在满画幅的左右两头各挡去一端，长宽比为3:2(16.9x24.9)，其对角线长度为29.3mm，折合1.7英寸。aps-c长宽比与135底片同比例；</li><li>P型是满幅的上下两边各挡去一条，使画面长宽比例为3:1(30.3×10.1mm)，被称为全景模式。</li></ul><p>注意：APS-H是满画幅，并非全画幅，全画幅尺寸是34mm x 24mm，满画幅尺寸是30.3mm x 16.6mm。另外由于市场和成本等因素，目前买到的基本都是APS-C画幅的数码相机，APS-H相机很少。</p><h3 id="纵横比"><a href="#纵横比" class="headerlink" title="纵横比"></a>纵横比</h3><p>纵横比有3：2、16：9、4：3和1：1四种。黑卡传感器尺寸为13.2*8.8mm，全像素比例就是3：2，其他几种都是从全像素比例中剪裁的，所以还是选3：2吧，如果以后洗成6寸相片也是3：2，无需剪裁。如果喜欢拍宽屏风景而且直出就选16：9。</p><h3 id="影像质量"><a href="#影像质量" class="headerlink" title="影像质量"></a>影像质量</h3><p>影像质量分RAW、RAW&amp;JPEG、精细、标准，RAW是原始文件，精细和标准都是JPG文件，是经过机内处理过后的成品。</p><p>RAW文件大小约20M，精细一般4-8M，标准一般3-5M。一张16G的卡，你选择RAW&amp;JPEG模式拍摄能拍500多张，用JPG模式能拍3000张。</p><p>大光比环境下（如逆光、晚上拍开着灯的商店、灯具、在阴影的地方拍到有阳光的天空、白天室内对门外或窗户拍、夕阳等）及过渡丰富的画面（如蓝天）RAW比JPG调整余地大，能找回高光下的更多细节。一般情况下两者差不多。</p><p>RAW的后期调整比JPG速度慢，如果电脑配置一般，差别会更明显。</p><p>注意：如果连拍时选择RAW格式，连拍速度会明显下降而且存储时间会加倍。</p><ul><li><strong>注重后期</strong>: 选RAW&amp;JPEG，之所以不单独选RAW，是因为RAW打开后直接导出往往不如机内的JPG好，有时RAW经过种种处理但质感仍不如机内直出JPG。</li><li><strong>一般情况</strong>: 选精细，遇大光比情况下再选用RAW&amp;JPEG。因为完全不后期的情况比较少，JPG在ACR中可调参数和RAW几乎一样。</li><li><strong>纯粹直出</strong>: 选标准。</li></ul><h3 id="全景"><a href="#全景" class="headerlink" title="全景"></a>全景</h3><p>影像尺寸、方向，需要模式转盘调到全景模式才能调整相关参数。</p><h3 id="模式转盘"><a href="#模式转盘" class="headerlink" title="模式转盘"></a>模式转盘</h3><p>什么是模式转盘？</p><p>等待继续更新…</p>]]></content>
+    
+    <summary type="html">
+    
+      take pictures/ISO &amp; APS-C
+    
+    </summary>
+    
+      <category term="picture" scheme="http://uiplus.org/categories/picture/"/>
+    
+    
+      <category term="SONY-RX100 III" scheme="http://uiplus.org/tags/SONY-RX100-III/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ThoughtWorks</title>
+    <link href="http://uiplus.org/2017/07/02/2016-05-06-ThoughtWorks%EF%BC%8DConference/"/>
+    <id>http://uiplus.org/2017/07/02/2016-05-06-ThoughtWorks－Conference/</id>
+    <published>2017-07-02T06:48:19.000Z</published>
+    <updated>2017-07-02T06:48:19.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>公司接到北京ThoughtWorks组织的峰会邀请，公司组团去北京听演讲学习，内容待补充…</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;公司接到北京ThoughtWorks组织的峰会邀请，公司组团去北京听演讲学习，内容待补充…&lt;/strong&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="life" scheme="http://uiplus.org/categories/life/"/>
+    
+    
+      <category term="旅游" scheme="http://uiplus.org/tags/%E6%97%85%E6%B8%B8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android ListView</title>
+    <link href="http://uiplus.org/2017/07/02/2017-01-11-Android-ListView/"/>
+    <id>http://uiplus.org/2017/07/02/2017-01-11-Android-ListView/</id>
+    <published>2017-07-02T06:48:19.000Z</published>
+    <updated>2017-07-02T06:48:19.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>Android ListView 无数据视图</strong></p><p>ListView继承了AdapterView公共方法<code>setEmptyView</code>：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Sets the view to show if the adapter is empty</span></div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setEmptyView</span> <span class="params">(View emptyView)</span></span></div></pre></td></tr></table></figure><p>这是ListView无数据时显示的视图，当Adapter为空或者无数据的时候显示，可是直接这样做并没有什么效果。</p><p>做法一：</p><p>无数据的布局文件代码：</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">&lt;?xml version="1.0" encoding="utf-8"?&gt;</div><div class="line"><span class="tag">&lt;<span class="name">RelativeLayout</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span></span></div><div class="line">    <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></div><div class="line">    <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span> &gt;</div><div class="line">    <span class="tag">&lt;<span class="name">LinearLayout</span> </span></div><div class="line">        <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></div><div class="line">        <span class="attr">android:layout_height</span>=<span class="string">"wrap_content"</span></div><div class="line">        <span class="attr">android:layout_centerVertical</span>=<span class="string">"true"</span></div><div class="line">        <span class="attr">android:gravity</span>=<span class="string">"center_horizontal"</span></div><div class="line">        <span class="attr">android:orientation</span>=<span class="string">"vertical"</span> &gt;</div><div class="line">        <span class="tag">&lt;<span class="name">ImageView</span> </span></div><div class="line">            <span class="attr">android:layout_width</span>=<span class="string">"wrap_content"</span></div><div class="line">            <span class="attr">android:layout_height</span>=<span class="string">"wrap_content"</span></div><div class="line">            <span class="attr">android:src</span>=<span class="string">"@drawable/no_data"</span> /&gt;</div><div class="line">        <span class="tag">&lt;<span class="name">TextView</span> </span></div><div class="line">            <span class="attr">android:layout_width</span>=<span class="string">"wrap_content"</span></div><div class="line">            <span class="attr">android:layout_height</span>=<span class="string">"wrap_content"</span></div><div class="line">            <span class="attr">android:textColor</span>=<span class="string">"#ffafafaf"</span></div><div class="line">            <span class="attr">android:textSize</span>=<span class="string">"18sp"</span></div><div class="line">            <span class="attr">android:layout_marginTop</span>=<span class="string">"8dp"</span></div><div class="line">            <span class="attr">android:text</span>=<span class="string">"什么都没有哦~"</span> /&gt;</div><div class="line">    <span class="tag">&lt;/<span class="name">LinearLayout</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">RelativeLayout</span>&gt;</span></div></pre></td></tr></table></figure><p>布局文件代码：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">RelativeLayout</span></span></div><div class="line">    <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span></div><div class="line">    <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></div><div class="line">    <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span> &gt;</div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">ListView</span> </span></div><div class="line">        <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></div><div class="line">        <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></div><div class="line">        <span class="attr">android:id</span>=<span class="string">"@+id/list"</span> /&gt;</div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">include</span> </span></div><div class="line">        <span class="attr">layout</span>=<span class="string">"@layout/layout_empty"</span></div><div class="line">        <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></div><div class="line">        <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></div><div class="line">        <span class="attr">android:visibility</span>=<span class="string">"gone"</span></div><div class="line">        <span class="attr">android:id</span>=<span class="string">"@+id/layout_empty"</span> /&gt;</div><div class="line"><span class="tag">&lt;/<span class="name">RelativeLayout</span>&gt;</span></div></pre></td></tr></table></figure></p><p>Activity代码：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@Override</span></div><div class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</div><div class="line">    <span class="keyword">super</span>.onCreate(savedInstanceState);</div><div class="line">    setContentView(R.layout.activity_listview);</div><div class="line"></div><div class="line">    ListView listView = (ListView) findViewById(R.id.list);</div><div class="line">    listView.setEmptyView(findViewById(R.id.layout_empty));</div><div class="line">&#125;</div></pre></td></tr></table></figure><p>做法二：</p><p>布局文件代码：</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">RelativeLayout</span></span></div><div class="line">    <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span></div><div class="line">    <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></div><div class="line">    <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span> &gt;</div><div class="line">    <span class="tag">&lt;<span class="name">ListView</span> </span></div><div class="line">        <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></div><div class="line">        <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></div><div class="line">        <span class="attr">android:id</span>=<span class="string">"@+id/list"</span> /&gt;</div><div class="line"><span class="tag">&lt;/<span class="name">RelativeLayout</span>&gt;</span></div></pre></td></tr></table></figure><p>Activity代码：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@Override</span></div><div class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</div><div class="line">    <span class="keyword">super</span>.onCreate(savedInstanceState);</div><div class="line">    setContentView(R.layout.activity_listview);</div><div class="line">    ListView listView = ((ListView) findViewById(R.id.list));</div><div class="line">    View listEmptyView = View.inflate(<span class="keyword">this</span>, R.layout.layout_empty, (ViewGroup) listView.getParent());</div><div class="line">    listView.setEmptyView(listEmptyView);</div><div class="line">&#125;</div></pre></td></tr></table></figure><p>有数据时相当于如下操作：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">listView.setVisibility(View.VISIBLE);</div><div class="line">listEmptyView.setVisibility(View.GONE);</div></pre></td></tr></table></figure></p><p>无数据时如下操作：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">listView.setVisibility(View.GONE);</div><div class="line">listEmptyView.setVisibility(View.VISIBLE);</div></pre></td></tr></table></figure></p><p>这样也就能够解释为什么要将listEmptyView添加到listView的同一视图层级上。</p><p>它们是两者只显示其一的关系，因此当设置的空数据布局后，listView的header和footer在无数据时候也是不显示的。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;Android ListView 无数据视图&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;ListView继承了AdapterView公共方法&lt;code&gt;setEmptyView&lt;/code&gt;：&lt;/p&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;t
+      
+    
+    </summary>
+    
+      <category term="code" scheme="http://uiplus.org/categories/code/"/>
+    
+    
+      <category term="android" scheme="http://uiplus.org/tags/android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>intellij IDEA 快捷键总结</title>
+    <link href="http://uiplus.org/2017/07/02/2017-03-28-intellij%20IDEA%20%E5%BF%AB%E6%8D%B7%E9%94%AE%E6%80%BB%E7%BB%93/"/>
+    <id>http://uiplus.org/2017/07/02/2017-03-28-intellij IDEA 快捷键总结/</id>
+    <published>2017-07-02T06:48:19.000Z</published>
+    <updated>2017-07-02T06:48:19.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>正所谓：学而时习之，不亦说乎。</p></blockquote><p>从毕业到现在一直使用Intellij IDEA开发工具，对于我来说它既熟悉又陌生的东西，真的想要相好的驾驭一个工具，需要经常总结使用经验。</p><h4 id="文本编辑"><a href="#文本编辑" class="headerlink" title="文本编辑"></a>文本编辑</h4><pre><code>删除 ----- Ctrl + Y复制 ----- Ctrl + D</code></pre><h4 id="智能提示"><a href="#智能提示" class="headerlink" title="智能提示"></a>智能提示</h4><pre><code>提示 ----------------- Ctrl + Space智能提示 -------------- Ctrl + Shift + Space完成当前语句 ----------- Ctrl + Shift + Enter将临时变量变成方法入参 --- Ctrl + Alt + P格式化代码 ------------- Ctrl + Alt + L格式化类引用 ----------- Ctrl + Alt + O</code></pre><h4 id="位置定位"><a href="#位置定位" class="headerlink" title="位置定位"></a>位置定位</h4><pre><code>定位到下一个或上一个错误 --- F2 / Shift + F2定位文件头 -------------- Ctrl +G（定位到文件行数）定位文件尾 -------------- Ctrl +G    定位到代码块开始 --------- Ctrl + \[定位到代码块结束 --------- Ctrl + \]回到最近的窗口 ----------- F12回到之前的文件 ----------- Alt + Left回到之后的文件 ----------- Alt  + Right定位到最后编辑位置 -------- Ctrl + Shift + Backspace切换到文件编辑 ----------- Esc关闭最近打开的窗口 -------- Shift + Esc</code></pre><h4 id="类、方法、文件定位"><a href="#类、方法、文件定位" class="headerlink" title="类、方法、文件定位"></a>类、方法、文件定位</h4><pre><code>查找类 ------------- Ctrl + N查找文件 ----------- Ctrl + Shift + N符号定位 ----------- Ctrl + Alt + Shift + N查看文件结构 -------- Ctrl + F12最近打开的文件 ------ Ctrl + E定位下一个方法 ------ Alt + Down定位上一个方法 ------ Alt + Up查看方法参数信息 ---- Ctrl  + p查看方法、类的doc --- Ctrl + Q</code></pre><h4 id="类、方法的结构查看、定位"><a href="#类、方法的结构查看、定位" class="headerlink" title="类、方法的结构查看、定位"></a>类、方法的结构查看、定位</h4><pre><code>跳到类或方法的声明 ------ Ctrl+ B定位到类的父类、接口 ---- Ctrl+ U查看类的继承结构 ------- Ctrl + H查看方法的继承结构 ------ Ctrl+ Shift + H查看类或方法被调用情况 --- Ctrl+ Alt +H 原地参看类、方法的声明 --- Ctrl+ Shift + I</code></pre><h4 id="运行与调试"><a href="#运行与调试" class="headerlink" title="运行与调试"></a>运行与调试</h4><p>  Compile and Run</p><pre><code>Ctrl + F9 -------------- Make project (compile modifed and dependent)Ctrl + Shift + F9 ------ Compile selected file, package or moduleAlt + Shift + F10 ------ Select configuration and runAlt + Shift + F9 ------- Select configuration and debugShift + F10 ------------ RunShift + F9 ------------- DebugCtrl + Shift + F10 ----- Run context configuration from editor</code></pre><p>  Debugging</p><pre><code>F8 -------------------- Step overF7 -------------------- Step intoShift + F7 ------------ Smart step intoShift + F8 ------------ Step outAlt + F9 -------------- Run to cursorAlt + F8 -------------- Evaluate expressionF9 -------------------- Resume programCtrl + F8 ------------- Toggle breakpointCtrl + Shift + F8 ----- View breakpoints</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;正所谓：学而时习之，不亦说乎。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;从毕业到现在一直使用Intellij IDEA开发工具，对于我来说它既熟悉又陌生的东西，真的想要相好的驾驭一个工具，需要经常总结使用经验。&lt;/p&gt;
+&lt;h4 id=&quot;文本编辑&quot;
+      
+    
+    </summary>
+    
+      <category term="code" scheme="http://uiplus.org/categories/code/"/>
+    
+    
+      <category term="IDEA" scheme="http://uiplus.org/tags/IDEA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Nginx Setup</title>
+    <link href="http://uiplus.org/2017/07/02/2017-04-27-Nginx-Config/"/>
+    <id>http://uiplus.org/2017/07/02/2017-04-27-Nginx-Config/</id>
+    <published>2017-07-02T06:48:19.000Z</published>
+    <updated>2017-07-02T06:48:19.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>1、安装Nginx<br>在安装Nginx之前，需确保系统已经安装了gcc、 openssl-devel、 pcre-devel和zlib-devel软件库。<br>下面是Nginx安装过程：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">wget http:<span class="comment">//nginx.org/download/nginx-1.0.14.tar.gz</span></div><div class="line">tar zxvf nginx-<span class="number">1.0</span>.14.tar.gz</div><div class="line">./configure --with-http_stub_status_module --prefix=/opt/nginx</div><div class="line">cd nginx-<span class="number">1.0</span>.14</div><div class="line">make</div><div class="line">make install</div></pre></td></tr></table></figure><p>其中， –with-http_stub_status_module 可以用来启用 Nginx 的 NginxStatus 功能，以监控 Nginx 的运行状态。<br>想要了解更多的模块的情况可以通过 ./configure –help 选项查看。<br>2、Nginx的配置文件结构<br>Nginx的配置文件nginx.conf位于其安装目录的conf目录下。<br>nginx.conf由多个块组成，最外面的块是main，main包含Events和HTTP，HTTP包含upstream和多个Server，Server又包含多个location：<br>nginx.conf<br>main（全局设置）、server（主机设置）、upstream（负载均衡服务器设置）和 location（URL匹配特定位置的设置）。<br>main块设置的指令将影响其他所有设置；<br>server块的指令主要用于指定主机和端口；<br>upstream指令主要用于负载均衡，设置一系列的后端服务器；<br>location块用于匹配网页位置。<br>这四者之间的关系式：server继承main，location继承server，upstream既不会继承其他设置也不会被继承。<br>在这四个部分当中，每个部分都包含若干指令，这些指令主要包含Nginx的主模块指令、事件模块指令、HTTP核心模块指令，同时每个部分还可以使用其他HTTP模块指令，例如Http SSL模块、HttpGzip Static模块和Http Addition模块等。<br>2.1 Nginx的全局配置<br>代码如下：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">user  nobody nobody;</div><div class="line">worker_processes  <span class="number">2</span>;</div><div class="line">error_log  logs/error.log  notice;</div><div class="line">pid        logs/nginx.pid;</div><div class="line">worker_rlimit_nofile <span class="number">65535</span>;</div><div class="line"> </div><div class="line">events&#123;</div><div class="line">     use epoll;</div><div class="line">     worker_connections      <span class="number">65536</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p><p>每个配置选项的含义解释如下：<br>user是个主模块指令，指定Nginx Worker进程运行用户以及用户组，默认由nobody账号运行。<br>worker_processes是个主模块指令，指定了Nginx要开启的进程数。每个Nginx进程平均耗费10M~12M内存。建议指定和CPU的数量一致即可。<br>error_log是个主模块指令，用来定义全局错误日志文件。日志输出级别有debug、info、notice、warn、error、crit可供选择，其中，debug输出日志最为最详细，而crit输出日志最少。<br>pid是个主模块指令，用来指定进程pid的存储文件位置。<br>worker_rlimit_nofile用于绑定worker进程和CPU， Linux内核2.4以上可用。<br>events事件指令是设定Nginx的工作模式及连接数上限：<br>use是个事件模块指令，用来指定Nginx的工作模式。Nginx支持的工作模式有select、poll、kqueue、epoll、rtsig和/dev/poll。其中select和poll都是标准的工作模式，kqueue和epoll是高效的工作模式，不同的是epoll用在Linux平台上，而kqueue用在BSD系统中。对于Linux系统，epoll工作模式是首选。<br>worker_connections也是个事件模块指令，用于定义Nginx每个进程的最大连接数，默认是1024。最大客户端连接数由worker_processes和worker_connections决定，即Max_client=worker_processes<em>worker_connections。<br>在作为反向代理时，max_clients变为：max_clients = worker_processes </em> worker_connections/4。<br>进程的最大连接数受Linux系统进程的最大打开文件数限制，在执行操作系统命令“ulimit -n 65536”后worker_connections的设置才能生效<br>2.2 HTTP服务器配置<br>Nginx对HTTP服务器相关属性的配置代码如下：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">http&#123;</div><div class="line">include      conf/mime.types;</div><div class="line">default_type  application/octet-stream;</div><div class="line">log_format main <span class="string">'$remote_addr - $remote_user [$time_local] '</span></div><div class="line"><span class="string">'"$request" $status $bytes_sent '</span></div><div class="line"><span class="string">'"$http_referer" "$http_user_agent" '</span></div><div class="line"><span class="string">'"$gzip_ratio"'</span>;</div><div class="line">log_format download <span class="string">'$remote_addr - $remote_user [$time_local] '</span></div><div class="line"><span class="string">'"$request" $status $bytes_sent '</span></div><div class="line"><span class="string">'"$http_referer" "$http_user_agent" '</span></div><div class="line"><span class="string">'"$http_range" "$sent_http_content_range"'</span>;</div><div class="line">client_max_body_size  <span class="number">20</span>m;</div><div class="line">client_header_buffer_size    <span class="number">32</span>K;</div><div class="line">large_client_header_buffers  <span class="number">4</span> <span class="number">32</span>k;</div><div class="line">Sendfile  on;</div><div class="line">tcp_nopush     on;</div><div class="line">tcp_nodelay    on;</div><div class="line">keepalive_timeout <span class="number">60</span>;</div><div class="line">client_header_timeout  <span class="number">10</span>;</div><div class="line">client_body_timeout    <span class="number">10</span>;</div><div class="line">send_timeout          <span class="number">10</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure><p>下面详细介绍下这段代码中每个配置选项的含义。<br>include是个主模块指令，实现对配置文件所包含的文件的设定，可以减少主配置文件的复杂度。类似于Apache中的include方法。<br>default_type属于HTTP核心模块指令，这里设定默认类型为二进制流，也就是当文件类型未定义时使用这种方式，例如在没有配置PHP环境时，Nginx是不予解析的，此时，用浏览器访问PHP文件就会出现下载窗口。<br>下面的代码实现对日志格式的设定：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">log_format main <span class="string">'$remote_addr - $remote_user [$time_local] '</span></div><div class="line"><span class="string">'"$request" $status $bytes_sent '</span></div><div class="line"><span class="string">'"$http_referer" "$http_user_agent" '</span></div><div class="line"><span class="string">'"$gzip_ratio"'</span>;</div><div class="line">log_format download <span class="string">'$remote_addr - $remote_user [$time_local] '</span></div><div class="line"><span class="string">'"$request" $status $bytes_sent '</span></div><div class="line"><span class="string">'"$http_referer" "$http_user_agent" '</span></div><div class="line"><span class="string">'"$http_range" "$sent_http_content_range"'</span>;</div></pre></td></tr></table></figure><p>log_format是Nginx的HttpLog模块指令，用于指定Nginx日志的输出格式。main为此日志输出格式的名称，可以在下面的access_log指令中引用。<br>client_max_body_size用来设置允许客户端请求的最大的单个文件字节数；<br>client_header_buffer_size用于指定来自客户端请求头的headerbuffer大小。对于大多数请求，1K的缓冲区大小已经足够，如果自定义了消息头或有更大的Cookie，可以增加缓冲区大小。这里设置为32K；<br>large_client_header_buffers用来指定客户端请求中较大的消息头的缓存最大数量和大小， “4”为个数，“128K”为大小，最大缓存量为4个128K；<br>sendfile参数用于开启高效文件传输模式。将tcp_nopush和tcp_nodelay两个指令设置为on用于防止网络阻塞；<br>keepalive_timeout设置客户端连接保持活动的超时时间。在超过这个时间之后，服务器会关闭该连接；<br>client_header_timeout设置客户端请求头读取超时时间。如果超过这个时间，客户端还没有发送任何数据，Nginx将返回“Request time out（408）”错误；<br>client_body_timeout设置客户端请求主体读取超时时间。如果超过这个时间，客户端还没有发送任何数据，Nginx将返回“Request time out（408）”错误，默认值是60；<br>send_timeout指定响应客户端的超时时间。这个超时仅限于两个连接活动之间的时间，如果超过这个时间，客户端没有任何活动，Nginx将会关闭连接。<br>2.3 HttpGzip模块配置<br>下面配置Nginx的HttpGzip模块。这个模块支持在线实时压缩输出数据流。<br>看是否安装了HttpGzip模块：<br>[root@vps ~]# /opt/nginx/sbin/nginx  -V<br>nginx version: nginx/1.0.14<br>built by gcc 4.4.6 20110731 (Red Hat 4.4.6-3) (GCC)<br>configure arguments: –with-http_stub_status_module –with-http_gzip_static_module –prefix=/opt/nginx<br>通过/opt/nginx/sbin/nginx -V命令可以查看安装Nginx时的编译选项，由输出可知，我们已经安装了HttpGzip模块。<br>下面是HttpGzip模块在Nginx配置中的相关属性设置：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">gzip  on;</div><div class="line">gzip_min_length  <span class="number">1</span>k;</div><div class="line">gzip_buffers     <span class="number">4</span>  <span class="number">16</span>k;</div><div class="line">gzip_http_version  <span class="number">1.1</span>;</div><div class="line">gzip_comp_level  <span class="number">2</span>;</div><div class="line">gzip_types  text/plain application/x-javascript text/css application/xml;</div><div class="line">gzip_vary  on;</div></pre></td></tr></table></figure><p>gzip用于设置开启或者关闭gzip模块，“gzip on”表示开启GZIP压缩，实时压缩输出数据流；<br>gzip_min_length设置允许压缩的页面最小字节数，页面字节数从header头的Content-Length中获取。默认值是0，不管页面多大都进行压缩。建议设置成大于1K的字节数，小于1K可能会越压越大；<br>gzip_buffers表示申请4个单位为16K的内存作为压缩结果流缓存，默认值是申请与原始数据大小相同的内存空间来存储gzip压缩结果；<br>gzip_http_version用于设置识别HTTP协议版本，默认是1.1，目前大部分浏览器已经支持GZIP解压，使用默认即可；<br>gzip_comp_level用来指定GZIP压缩比，1 压缩比最小，处理速度最快；9 压缩比最大，传输速度快，但处理最慢，也比较消耗cpu资源；<br>gzip_types用来指定压缩的类型，无论是否指定，“text/html”类型总是会被压缩的；<br>gzip_vary选项可以让前端的缓存服务器缓存经过GZIP压缩的页面，例如用Squid缓存经过Nginx压缩的数据。<br>2.4 负载均衡配置<br>下面设定负载均衡的服务器列表：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">upstream cszhi.com&#123;</div><div class="line">ip_hash;</div><div class="line">server <span class="number">192.168</span>.8.11:<span class="number">80</span>;</div><div class="line">server <span class="number">192.168</span>.8.12:<span class="number">80</span>  down;</div><div class="line">server <span class="number">192.168</span>.8.13:<span class="number">8009</span>  max_fails=<span class="number">3</span>  fail_timeout=<span class="number">20</span>s;</div><div class="line">server <span class="number">192.168</span>.8.146:<span class="number">8080</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure><p>upstream是Nginx的HTTP Upstream模块，这个模块通过一个简单的调度算法来实现客户端IP到后端服务器的负载均衡。<br>在上面的设定中，通过upstream指令指定了一个负载均衡器的名称cszhi.com。这个名称可以任意指定，在后面需要的地方直接调用即可。<br>Nginx的负载均衡模块目前支持4种调度算法，下面进行分别介绍，其中后两项属于第三方的调度方法。<br>轮询（默认）：每个请求按时间顺序逐一分配到不同的后端服务器，如果后端某台服务器宕机，故障系统被自动剔除，使用户访问不受影响；<br>Weight：指定轮询权值，Weight值越大，分配到的访问机率越高，主要用于后端每个服务器性能不均的情况下；<br>ip_hash：每个请求按访问IP的hash结果分配，这样来自同一个IP的访客固定访问一个后端服务器，有效解决了动态网页存在的session共享问题；<br>fair：比上面两个更加智能的负载均衡算法。此种算法可以依据页面大小和加载时间长短智能地进行负载均衡，也就是根据后端服务器的响应时间来分配请求，响应时间短的优先分配。Nginx本身是不支持fair的，如果需要使用这种调度算法，必须下载Nginx的upstream_fair模块；<br>url_hash：按访问url的hash结果来分配请求，使每个url定向到同一个后端服务器，可以进一步提高后端缓存服务器的效率。Nginx本身是不支持url_hash的，如果需要使用这种调度算法，必须安装Nginx 的hash软件包。<br>在HTTP Upstream模块中，可以通过server指令指定后端服务器的IP地址和端口，同时还可以设定每个后端服务器在负载均衡调度中的状态。常用的状态有：<br>down：表示当前的server暂时不参与负载均衡；<br>backup：预留的备份机器。当其他所有的非backup机器出现故障或者忙的时候，才会请求backup机器，因此这台机器的压力最轻；<br>max_fails：允许请求失败的次数，默认为1。当超过最大次数时，返回proxy_next_upstream 模块定义的错误；<br>fail_timeout：在经历了max_fails次失败后，暂停服务的时间。max_fails可以和fail_timeout一起使用。<br>注意，当负载调度算法为ip_hash时，后端服务器在负载均衡调度中的状态不能是weight和backup。<br>2.5 server虚拟主机配置<br>下面介绍对虚拟主机的配置。<br>建议将对虚拟主机进行配置的内容写进另外一个文件，然后通过include指令包含进来，这样更便于维护和管理。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">server&#123;</div><div class="line">listen          <span class="number">80</span>;</div><div class="line">server_name    <span class="number">192.168</span>.8.18  cszhi.com;</div><div class="line">index index.html index.htm index.php;</div><div class="line">root  /wwwroot/www.cszhi.com</div><div class="line">charset gb2312;</div><div class="line">access_log  logs/www.ixdba.net.access.log  main;</div></pre></td></tr></table></figure><p>server标志定义虚拟主机开始，listen用于指定虚拟主机的服务端口，server_name用来指定IP地址或者域名，多个域名之间用空格分 开。index用于设定访问的默认首页地址，root指令用于指定虚拟主机的网页根目录，这个目录可以是相对路径，也可以是绝对路径。Charset用于 设置网页的默认编码格式。access_log用来指定此虚拟主机的访问日志存放路径，最后的main用于指定访问日志的输出格式。<br>2.6 location URL匹配配置<br>URL地址匹配是进行Nginx配置中最灵活的部分。 location支持正则表达式匹配，也支持条件判断匹配，用户可以通过location指令实现Nginx对动、静态网页进行过滤处理。使用location URL匹配配置还可以实现反向代理，用于实现PHP动态解析或者负载负载均衡。<br>以下这段设置是通过location指令来对网页URL进行分析处理，所有扩展名以.gif、.jpg、.jpeg、.png、.bmp、.swf结尾的静态文件都交给nginx处理，而expires用来指定静态文件的过期时间，这里是30天。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">location ~ .*\.(gif|jpg|jpeg|png|bmp|swf)$  &#123;</div><div class="line">                root    /wwwroot/www.cszhi.com;</div><div class="line">               expires <span class="number">30</span>d;</div><div class="line">        &#125;</div></pre></td></tr></table></figure><p>以下这段设置是将upload和html下的所有文件都交给nginx来处理，当然，upload和html目录包含在/web/wwwroot/www.cszhi.com目录中。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">location ~ ^/(upload|html)/  &#123;</div><div class="line">        root    /web/wwwroot/www.cszhi.com;</div><div class="line">        expires <span class="number">30</span>d;</div><div class="line">        &#125;</div></pre></td></tr></table></figure></p><p>在最后这段设置中，location是对此虚拟主机下动态网页的过滤处理，也就是将所有以.jsp为后缀的文件都交给本机的8080端口处理。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">location ~ .*.php$ &#123;</div><div class="line">    index index.php;</div><div class="line">    proxy_pass http:<span class="comment">//localhost:8080;</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;1、安装Nginx&lt;br&gt;在安装Nginx之前，需确保系统已经安装了gcc、 openssl-devel、 pcre-devel和zlib-devel软件库。&lt;br&gt;下面是Nginx安装过程：&lt;/p&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;tabl
+      
+    
+    </summary>
+    
+      <category term="code" scheme="http://uiplus.org/categories/code/"/>
+    
+    
+      <category term="nginx" scheme="http://uiplus.org/tags/nginx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux文件查找命令find和whereis用法</title>
+    <link href="http://uiplus.org/2017/07/02/2017-04-27-Linux%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE%E5%91%BD%E4%BB%A4find%E5%92%8Cwhereis%E7%94%A8%E6%B3%95/"/>
+    <id>http://uiplus.org/2017/07/02/2017-04-27-Linux文件查找命令find和whereis用法/</id>
+    <published>2017-07-02T06:48:19.000Z</published>
+    <updated>2017-07-02T06:48:19.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>whereis &lt;程序名称&gt;</p><p>查找软件的安装路径</p><p>-b 只查找二进制文件</p><p>-m 只查找帮助文件</p><p>-s 只查找源代码</p><p>-u 排除指定类型文件</p><p>-f 只显示文件名</p><p>-B &lt;目录&gt; 在指定目录下查找二进制文件</p><p>-M &lt;目录&gt; 在指定目录下查找帮助文件</p><p>-S &lt;目录&gt; 在指定目录下查找源代码</p><p>locate &lt;文件名称&gt;</p><p>在文件索引数据库中搜索文件</p><p>-d &lt;数据库路径&gt; 搜索指定数据库</p><p>updatedb</p><p>更新文件索引数据库</p><p>find [路径] &lt;表达式&gt;</p><p>查找文件</p><p>-name &lt;表达式&gt; 根据文件名查找文件</p><p>-iname &lt;表达式&gt; 根据文件名查找文件，忽略大小写</p><p>-path &lt;表达式&gt; 根据路径查找文件</p><p>-ipath &lt;表达式&gt; 根据路径查找文件，忽略大小写</p><p>-amin &lt;分钟&gt; 过去N分钟内访问过的文件</p><p>-atime &lt;天数&gt; 过去N天内访问过的文件</p><p>-cmin &lt;分钟&gt; 过去N分钟内修改过的文件</p><p>-ctime &lt;天数&gt; 过去N天内修改过的文件</p><p>-anewer &lt;参照文件&gt; 比参照文件更晚被读取过的文件</p><p>-cnewer &lt;参照文件&gt; 比参照文件更晚被修改过的文件</p><p>-size &lt;大小&gt; 根据文件大小查找文件，单位b c w k M G</p><p>-type &lt;文件类型&gt; 根据文件类型查找文件。b 块设备 c 字符设备 d 目录 p 管道文件 f 普通文件 l 链接 s 端口文件</p><p>-user &lt;用户名&gt; 按归属用户查找文件</p><p>-uid <uid> 按UID查找文件</uid></p><p>-group &lt;群组名&gt; 按归属群组查找文件</p><p>-gid <gid> 按GID查找文件</gid></p><p>-empty 查找空文件</p><p>从文件内容查找匹配指定字符串的行：</p><p>$ grep “被查找的字符串” 文件名</p><p>从文件内容查找与正则表达式匹配的行：</p><p>$ grep –e “正则表达式” 文件名</p><p>查找时不区分大小写：</p><p>$ grep –i “被查找的字符串” 文件名</p><p>查找匹配的行数：</p><p>$ grep -c “被查找的字符串” 文件名</p><p>从文件内容查找不匹配指定字符串的行：</p><p>$ grep –v “被查找的字符串” 文件名</p><p>从根目录开始查找所有扩展名为.log的文本文件，并找出包含”ERROR”的行</p><p>find / -type f -name “*.log” | xargs grep “ERROR”</p><p>系统查找到httpd.conf文件后即时在屏幕上显示httpd.conf文件信息。 </p><p>find/-name”httpd.conf”-ls</p><p>在根目录下查找某个文件</p><p>find . -name “test”</p><p>在某个目录下查找包含某个字符串的文件</p><p>grep -r “zh_CN” ./</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;whereis &amp;lt;程序名称&amp;gt;&lt;/p&gt;
+&lt;p&gt;查找软件的安装路径&lt;/p&gt;
+&lt;p&gt;-b 只查找二进制文件&lt;/p&gt;
+&lt;p&gt;-m 只查找帮助文件&lt;/p&gt;
+&lt;p&gt;-s 只查找源代码&lt;/p&gt;
+&lt;p&gt;-u 排除指定类型文件&lt;/p&gt;
+&lt;p&gt;-f 只显示文件名&lt;/p&gt;
+&lt;p&gt;-B
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://uiplus.org/categories/Linux/"/>
+    
+    
+      <category term="cmd" scheme="http://uiplus.org/tags/cmd/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux中提示No such file or directory解决方法</title>
+    <link href="http://uiplus.org/2017/07/02/2017-05-12-Linux%E4%B8%AD%E6%8F%90%E7%A4%BANo%20such%20file%20or%20directory%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
+    <id>http://uiplus.org/2017/07/02/2017-05-12-Linux中提示No such file or directory解决方法/</id>
+    <published>2017-07-02T06:48:19.000Z</published>
+    <updated>2017-07-02T06:48:19.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>解决方法</p><p>分析原因，可能因为我平台迁移碰到权限问题我们来进行权限转换</p><p>1）在Windows下转换：<br>利用一些编辑器如UltraEdit或EditPlus等工具先将脚本编码转换，再放到Linux中执行。</p><blockquote><p>转换方式如下（UltraEdit）：File–&gt;Conversions–&gt;DOS-&gt;UNIX即可。</p></blockquote><p>2)方法<br>用vim打开xxx.sh脚本文件，输入set ff：</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">// 用vim打开脚本文件</div><div class="line">vi xxx.sh </div><div class="line"></div><div class="line">// 查看文件格式</div><div class="line">:<span class="built_in">set</span> ff  </div><div class="line"></div><div class="line">// 回车显示文集格式</div><div class="line">fileformat=dos</div><div class="line"></div><div class="line">// 设置文件格式</div><div class="line">:<span class="built_in">set</span> ff=unix </div><div class="line"></div><div class="line">// 保存并退出</div><div class="line">:wq!</div><div class="line"></div><div class="line">// 再次执行</div><div class="line">sh xxx.sh</div></pre></td></tr></table></figure><p>3）当然，也可以在linux中权限转换，同时支持dos和unix两种模式</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">// 确保文件有可执行权限</div><div class="line">chmod u+x \&lt;filename\&gt; </div><div class="line"></div><div class="line">// 修改文件格式</div><div class="line">vi \&lt;filename\&gt;</div></pre></td></tr></table></figure><p>三种方法都可以方便快速的解决关于Linux执行.sh文件，提示No such file or directory这个问题了。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;解决方法&lt;/p&gt;
+&lt;p&gt;分析原因，可能因为我平台迁移碰到权限问题我们来进行权限转换&lt;/p&gt;
+&lt;p&gt;1）在Windows下转换：&lt;br&gt;利用一些编辑器如UltraEdit或EditPlus等工具先将脚本编码转换，再放到Linux中执行。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://uiplus.org/categories/Linux/"/>
+    
+    
+      <category term="command" scheme="http://uiplus.org/tags/command/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>免费开源的思维导图软件推荐</title>
+    <link href="http://uiplus.org/2017/07/02/2017-04-27-%E5%85%8D%E8%B4%B9%E5%BC%80%E6%BA%90%E7%9A%84%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
+    <id>http://uiplus.org/2017/07/02/2017-04-27-免费开源的思维导图软件推荐/</id>
+    <published>2017-07-02T06:48:19.000Z</published>
+    <updated>2017-07-02T06:48:19.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>思维导图也叫心智图，是一项流行的全脑式学习方法，用来表示词，思路，任务或其他与围绕着一个中央关键词或想法项目的示意图。<br>通过径向，图形和非线性的方式提出意见，思维导图鼓励头脑风暴的方法来规划和组织任务。<br>虽然思维导图的分支表示分层树形结构，其放射状排列扰乱通常与呈现更加线性的视觉线索层次相关概念的优先次序。</p><ol><li><p>XMind<br>XMind 是一个开源项目，这意味着它可以免费下载并自由地使用。<br>XMind 也有 Plus/Pro 版本，提供更专业的功能。<br>除了地图结构， XMind 同时也提供树，逻辑和鱼骨图，具有内置拼写检查，搜索，加密，甚至是音频笔记功能。</p></li><li><p>Coggle<br>Coggle 是一个免费的在线协作思维导图工具，让您直观地用一个精美的呈现分支结构定义的连接。<br>它可以让你制作出漂亮的笔记，方便快捷。与朋友和同事分享，和他们协同工作，展现你的想法。</p></li><li><p>FreeMind<br>FreeMind 是用 Java 编写的免费心智图软件。最近的发展希望把它变成高生产力的工具。<br>操作 FreeMind 的导航比 MindManager 快，因为它有一键式“折叠/展开”和“跟随链接”操作。</p></li><li><p>MindManager<br>MindManager 是倍受赞誉、最好的思维导图软件。<br>这款强大的思维导图工具可以让你在一个单一的视图组织你的想法，在这里你可以轻松地拖放操作和优先考虑你的想法。<br>添加图像，视频，超链接和附件都非常简单，让你简单的把想法付诸行动了。<br>想了解更多信息，可以关注中文官网：<a href="http://www.mindmanager.cc/。" target="_blank" rel="external">http://www.mindmanager.cc/。</a></p></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;思维导图也叫心智图，是一项流行的全脑式学习方法，用来表示词，思路，任务或其他与围绕着一个中央关键词或想法项目的示意图。&lt;br&gt;通过径向，图形和非线性的方式提出意见，思维导图鼓励头脑风暴的方法来规划和组织任务。&lt;br&gt;虽然思维导图的分支表示分层树形结构，其放射状排列扰乱通常与
+      
+    
+    </summary>
+    
+      <category term="tool" scheme="http://uiplus.org/categories/tool/"/>
+    
+    
+      <category term="思维导图" scheme="http://uiplus.org/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://uiplus.org/2017/07/02/hello-world/"/>
+    <id>http://uiplus.org/2017/07/02/hello-world/</id>
+    <published>2017-07-02T06:29:15.000Z</published>
+    <updated>2017-07-02T06:29:15.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
