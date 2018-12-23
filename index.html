@@ -477,7 +477,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://uiplus.org/2017/07/02/2016-12-28-Android-UI-设计规范/">
+    <link itemprop="mainEntityOfPage" href="http://uiplus.org/2017/07/02/2017-01-11-Android-ListView/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="远馨">
@@ -496,7 +496,7 @@
         
           <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/07/02/2016-12-28-Android-UI-设计规范/" itemprop="url">Android UI</a></h2>
+                <a class="post-title-link" href="/2017/07/02/2017-01-11-Android-ListView/" itemprop="url">Android ListView</a></h2>
         
 
         <div class="post-meta">
@@ -548,7 +548,7 @@
 
           
           
-             <span id="/2017/07/02/2016-12-28-Android-UI-设计规范/" class="leancloud_visitors" data-flag-title="Android UI">
+             <span id="/2017/07/02/2017-01-11-Android-ListView/" class="leancloud_visitors" data-flag-title="Android ListView">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -575,7 +575,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  1,454
+                  418
                 </span>
               
 
@@ -591,7 +591,7 @@
                   <span class="post-meta-item-text">阅读时长</span>
                 
                 <span title="阅读时长">
-                  5
+                  2
                 </span>
               
             </div>
@@ -611,18 +611,17 @@
       
         
           
-          # 首先，理解dp（dip）、px、sp、dpi、ppi、分辨率、屏幕尺寸
-
-单位：dp、dip、sp、px
-dp（Density-independent Pixels）：设备独立像素，又称设备无关像素，一种基于屏幕密度的抽象单位。 1dp=1/160英寸，dp的单位是英寸，dp的意义在于不同的设备上看起来效果一样大。dip和dp含义相同。
-
-sp（Scale Independent Pixels）：与dp类似，用户表示字号大小。
-
-px(Pixel):像素的缩写，像素是指基本原色素及其灰度的基本编码，由 Picture(图像) 和 Element（元素）这两个单词的字母所组成。 像素是电子影
+          Android ListView 无数据视图
+ListView继承了AdapterView公共方法setEmptyView：
+12// Sets the view to show if the adapter is emptypublic void setEmptyView (View emptyView)
+这是ListView无数据时显示的视图，当Adapter为空或者无数据的时候显示，可是直接这样做并没有什么效果。
+做法一：
+无数据的布局文件代码：
+1234567891011121314151617181920212223&lt;?xml version="1.0" encoding="u
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/07/02/2016-12-28-Android-UI-设计规范/#more" rel="contents">
+            <a class="btn" href="/2017/07/02/2017-01-11-Android-ListView/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
