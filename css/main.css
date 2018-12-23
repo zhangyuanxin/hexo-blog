@@ -1535,16 +1535,6 @@ pre .javascript .function {
   text-align: center;
   margin: 0 auto;
 }
-#wechat:hover p {
-  animation: roll 0.2s infinite linear;
-  -webkit-animation: roll 0.2s infinite linear;
-  -moz-animation: roll 0.2s infinite linear;
-}
-#alipay:hover p {
-  animation: roll 0.2s infinite linear;
-  -webkit-animation: roll 0.2s infinite linear;
-  -moz-animation: roll 0.2s infinite linear;
-}
 .reward-dashang {
   width: 100px;
   height: 100px;
@@ -1558,70 +1548,6 @@ pre .javascript .function {
 }
 .reward-dashang span {
   font-weight: bolder;
-}
-@-moz-keyframes roll {
-  from {
-    -webkit-transform: rotateZ(30deg);
-    -moz-transform: rotateZ(30deg);
-    -ms-transform: rotateZ(30deg);
-    -o-transform: rotateZ(30deg);
-    transform: rotateZ(30deg);
-  }
-  to {
-    -webkit-transform: rotateZ(-30deg);
-    -moz-transform: rotateZ(-30deg);
-    -ms-transform: rotateZ(-30deg);
-    -o-transform: rotateZ(-30deg);
-    transform: rotateZ(-30deg);
-  }
-}
-@-webkit-keyframes roll {
-  from {
-    -webkit-transform: rotateZ(30deg);
-    -moz-transform: rotateZ(30deg);
-    -ms-transform: rotateZ(30deg);
-    -o-transform: rotateZ(30deg);
-    transform: rotateZ(30deg);
-  }
-  to {
-    -webkit-transform: rotateZ(-30deg);
-    -moz-transform: rotateZ(-30deg);
-    -ms-transform: rotateZ(-30deg);
-    -o-transform: rotateZ(-30deg);
-    transform: rotateZ(-30deg);
-  }
-}
-@-o-keyframes roll {
-  from {
-    -webkit-transform: rotateZ(30deg);
-    -moz-transform: rotateZ(30deg);
-    -ms-transform: rotateZ(30deg);
-    -o-transform: rotateZ(30deg);
-    transform: rotateZ(30deg);
-  }
-  to {
-    -webkit-transform: rotateZ(-30deg);
-    -moz-transform: rotateZ(-30deg);
-    -ms-transform: rotateZ(-30deg);
-    -o-transform: rotateZ(-30deg);
-    transform: rotateZ(-30deg);
-  }
-}
-@keyframes roll {
-  from {
-    -webkit-transform: rotateZ(30deg);
-    -moz-transform: rotateZ(30deg);
-    -ms-transform: rotateZ(30deg);
-    -o-transform: rotateZ(30deg);
-    transform: rotateZ(30deg);
-  }
-  to {
-    -webkit-transform: rotateZ(-30deg);
-    -moz-transform: rotateZ(-30deg);
-    -ms-transform: rotateZ(-30deg);
-    -o-transform: rotateZ(-30deg);
-    transform: rotateZ(-30deg);
-  }
 }
 .post-wordcount {
   display: inline-block;
@@ -1866,7 +1792,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ebff25;
+  background: #a8c2c6;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2745,6 +2671,7 @@ pre .javascript .function {
   padding: 40px;
   width: 700px;
   background: #fff;
+  opacity: 0.8;
   min-height: 700px;
   box-shadow: initial;
   border-radius: initial;
