@@ -151,6 +151,8 @@
 
 
 
+<script type="text/javascript" src="/js/src/love.js"></script>
+
 
   <title>斯是陋室 - 读书  写作  摄影</title>
   
@@ -291,7 +293,7 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+  <section id="posts" class="posts-expand  page-home ">
     
       
 
@@ -302,7 +304,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://uiplus.org/2017/07/02/2017-05-12-Linux中提示No such file or directory解决方法/">
+    <link itemprop="mainEntityOfPage" href="http://uiplus.org/2017/07/02/2016-12-28-Android-UI-设计规范/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="远馨">
@@ -321,7 +323,7 @@
         
           <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/07/02/2017-05-12-Linux中提示No such file or directory解决方法/" itemprop="url">Linux中提示No such file or directory解决方法</a></h2>
+                <a class="post-title-link" href="/2017/07/02/2016-12-28-Android-UI-设计规范/" itemprop="url">Android UI</a></h2>
         
 
         <div class="post-meta">
@@ -356,8 +358,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Linux/" itemprop="url" rel="index">
-                    <span itemprop="name">Linux</span>
+                  <a href="/categories/code/" itemprop="url" rel="index">
+                    <span itemprop="name">code</span>
                   </a>
                 </span>
 
@@ -373,7 +375,7 @@
 
           
           
-             <span id="/2017/07/02/2017-05-12-Linux中提示No such file or directory解决方法/" class="leancloud_visitors" data-flag-title="Linux中提示No such file or directory解决方法">
+             <span id="/2017/07/02/2016-12-28-Android-UI-设计规范/" class="leancloud_visitors" data-flag-title="Android UI">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -400,7 +402,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  226
+                  1,454
                 </span>
               
 
@@ -416,7 +418,7 @@
                   <span class="post-meta-item-text">阅读时长</span>
                 
                 <span title="阅读时长">
-                  1
+                  5
                 </span>
               
             </div>
@@ -436,18 +438,16 @@
       
         
           
-          解决方法
-分析原因，可能因为我平台迁移碰到权限问题我们来进行权限转换
-1）在Windows下转换：利用一些编辑器如UltraEdit或EditPlus等工具先将脚本编码转换，再放到Linux中执行。
+          # 首先，理解dp（dip）、px、sp、dpi、ppi、分辨率、屏幕尺寸
 
-转换方式如下（UltraEdit）：File–&gt;Conversions–&gt;DOS-&gt;UNIX即可。
+单位：dp、dip、sp、px
+dp（Density-independent Pixels）：设备独立像素，又称设备无关像素，一种基于屏幕密度的抽象单位。 1dp=1/160英寸，dp的单位是英寸，dp的意义在于不同的设备上看起来效果一样大。dip和dp含义相同。
 
-2)方法用vim打开xxx.sh脚本文件，输入set ff：
-12345678
+sp（Scale Independent Pixels
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/07/02/2017-05-12-Linux中提示No such file or directory解决方法/#more" rel="contents">
+            <a class="btn" href="/2017/07/02/2016-12-28-Android-UI-设计规范/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -677,8 +677,11 @@ Quick
   <aside id="sidebar" class="sidebar">
     
 <div class="musicbox">
+
+
+
   <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="450px" src="//music.163.com/outchain/player?type=0&id=2569691939&auto=0&height=350"></iframe>
-  </div>
+</div>
 
 
     <div class="sidebar-inner">
@@ -812,7 +815,7 @@ Quick
   
   &copy;  2015 - 
   <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
+  <span class="with-love" id="heart">
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">远馨</span>
