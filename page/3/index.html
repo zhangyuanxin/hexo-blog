@@ -234,6 +234,16 @@
   </li>
   
   
+  <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+      
+      分类
+    </a>
+  </li>
+  
+  
   <li class="menu-item menu-item-archives">
     <a href="/archives/" rel="section">
       
@@ -250,6 +260,16 @@
       <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
       
       标签
+    </a>
+  </li>
+  
+  
+  <li class="menu-item menu-item-photo">
+    <a href="/photo/" rel="section">
+      
+      <i class="menu-item-icon fa fa-fw fa-camera"></i> <br />
+      
+      摄影
     </a>
   </li>
   
@@ -423,10 +443,7 @@
 文本编辑删除 ----- Ctrl + Y
 复制 ----- Ctrl + D
 智能提示提示 ----------------- Ctrl + Space
-智能提示 -------------- Ctrl + Shift + Space
-完成当前语句 ----------- Ctrl + Shift + Enter
-将临时变量变成方法入参 --- Ctrl + Alt + P
-格式化代码 ------------- Ct
+智能提示 -------------- Ctrl + Shift +
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -622,13 +639,6 @@
 -S &lt;目录&gt; 在指定目录下查找源代码
 locate &lt;文件名称&gt;
 在文件索引数据库中搜索文件
--d &lt;数据库路径&gt; 搜索指定数据库
-updatedb
-更新文件索引数据库
-find [路径] &lt;表达式&gt;
-查找文件
--name &lt;表达式&gt; 根据文件名查找文件
-
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -678,7 +688,7 @@ find [路径] &lt;表达式&gt;
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://uiplus.org/2017/07/02/2017-05-12-Linux中提示No such file or directory解决方法/">
+    <link itemprop="mainEntityOfPage" href="http://uiplus.org/2017/07/02/2016-05-28-Vi-Editor-Commands/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="远馨">
@@ -697,7 +707,7 @@ find [路径] &lt;表达式&gt;
         
           <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/07/02/2017-05-12-Linux中提示No such file or directory解决方法/" itemprop="url">Linux中提示No such file or directory解决方法</a></h2>
+                <a class="post-title-link" href="/2017/07/02/2016-05-28-Vi-Editor-Commands/" itemprop="url">VI Commands</a></h2>
         
 
         <div class="post-meta">
@@ -732,8 +742,8 @@ find [路径] &lt;表达式&gt;
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Linux/" itemprop="url" rel="index">
-                    <span itemprop="name">Linux</span>
+                  <a href="/categories/code/" itemprop="url" rel="index">
+                    <span itemprop="name">code</span>
                   </a>
                 </span>
 
@@ -749,7 +759,7 @@ find [路径] &lt;表达式&gt;
 
           
           
-             <span id="/2017/07/02/2017-05-12-Linux中提示No such file or directory解决方法/" class="leancloud_visitors" data-flag-title="Linux中提示No such file or directory解决方法">
+             <span id="/2017/07/02/2016-05-28-Vi-Editor-Commands/" class="leancloud_visitors" data-flag-title="VI Commands">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -776,7 +786,7 @@ find [路径] &lt;表达式&gt;
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  226
+                  1,297
                 </span>
               
 
@@ -792,7 +802,7 @@ find [路径] &lt;表达式&gt;
                   <span class="post-meta-item-text">阅读时长</span>
                 
                 <span title="阅读时长">
-                  1
+                  5
                 </span>
               
             </div>
@@ -812,18 +822,24 @@ find [路径] &lt;表达式&gt;
       
         
           
-          解决方法
-分析原因，可能因为我平台迁移碰到权限问题我们来进行权限转换
-1）在Windows下转换：利用一些编辑器如UltraEdit或EditPlus等工具先将脚本编码转换，再放到Linux中执行。
+          
+由于最近工作经常要用到linux系统，但是命令都不是太熟悉，现在开始慢慢总结，不断练习，不断学习吧！
 
-转换方式如下（UltraEdit）：File–&gt;Conversions–&gt;DOS-&gt;UNIX即可。
+# vi的使用教程（比较适合新手学习vi）：
+为什么要学习vi命令
+vi使用模式
+vi常用命令
+文件的打开关闭保存
+插入文本或新建行
+移动光标、删除、恢复字符或行
+搜索
+其他
 
-2)方法用vim打开xxx.sh脚本文件，输入set ff：
-1234567891011121314151617// 用vim打开脚本文件vi xxx.sh // 查看文件格式:set ff  // 回车显示文集格式fileformat=dos// 设置文件格式:set ff=
+# 为什么要学习vi命令 ？vi是visual interface的缩写，vim是vi IMproved(增强版的v
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/07/02/2017-05-12-Linux中提示No such file or directory解决方法/#more" rel="contents">
+            <a class="btn" href="/2017/07/02/2016-05-28-Vi-Editor-Commands/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1004,8 +1020,7 @@ find [路径] &lt;表达式&gt;
         
           
           1、安装Nginx在安装Nginx之前，需确保系统已经安装了gcc、 openssl-devel、 pcre-devel和zlib-devel软件库。下面是Nginx安装过程：
-123456wget http://nginx.org/download/nginx-1.0.14.tar.gztar zxvf nginx-1.0.14.tar.gz./configure --with-http_stub_status_module --prefix=/opt/nginxcd nginx-1.0.14makemake install
-其中， –with-http_stub_status_module
+123456wget http://nginx.org/download/nginx-1.0.14.tar.gztar zxvf nginx-1.0.14.tar.gz./configure --with-http_stu
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1191,9 +1206,7 @@ find [路径] &lt;表达式&gt;
           
           思维导图也叫心智图，是一项流行的全脑式学习方法，用来表示词，思路，任务或其他与围绕着一个中央关键词或想法项目的示意图。通过径向，图形和非线性的方式提出意见，思维导图鼓励头脑风暴的方法来规划和组织任务。虽然思维导图的分支表示分层树形结构，其放射状排列扰乱通常与呈现更加线性的视觉线索层次相关概念的优先次序。
 
-XMindXMind 是一个开源项目，这意味着它可以免费下载并自由地使用。XMind 也有 Plus/Pro 版本，提供更专业的功能。除了地图结构， XMind 同时也提供树，逻辑和鱼骨图，具有内置拼写检查，搜索，加密，甚至是音频笔记功能。
-
-CoggleCoggle 是一个免费的在线协作思
+XMindXMind 是一个开源项目，这意味着它可以免费下载并自由地使用。XMind 也有 
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1287,7 +1300,7 @@ CoggleCoggle 是一个免费的在线协作思
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">16</span>
+                <span class="site-state-item-count">17</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>

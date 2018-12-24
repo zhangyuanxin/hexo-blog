@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[平安夜]]></title>
+    <url>%2F2018%2F12%2F25%2F%E5%B9%B3%E5%AE%89%E5%A4%9C%2F</url>
+    <content type="text"><![CDATA[平安夜快乐！]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[Nginx Setup]]></title>
     <url>%2F2018%2F12%2F24%2F2016-11-07-Nginx-Setup%2F</url>
     <content type="text"><![CDATA[摘要: 使用源的方式安装nginx的操作方式. 安装环境是 阿里云Ubuntu Server 14. 在源中添加资源 在/etc/apt/sources.lst中 添加下面两源： 12eb http://nginx.org/packages/mainline/ubuntu/ trusty nginxdeb-src http://nginx.org/packages/mainline/ubuntu/ trusty nginx 添加key到文件中 123cd /etc/aptwget http://nginx.org/keys/nginx_signing.keyapt-key add nginx_signing.key 安装nginx 12apt-get updateapt-get install nginx 检查安装是否成功 1/usr/sbin/nginx -V]]></content>
@@ -20,18 +25,6 @@
       </categories>
       <tags>
         <tag>android</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[VI Commands]]></title>
-    <url>%2F2017%2F07%2F02%2F2016-05-28-Vi-Editor-Commands%2F</url>
-    <content type="text"><![CDATA[由于最近工作经常要用到linux系统，但是命令都不是太熟悉，现在开始慢慢总结，不断练习，不断学习吧！ # vi的使用教程（比较适合新手学习vi）： 为什么要学习vi命令 vi使用模式 vi常用命令 文件的打开关闭保存 插入文本或新建行 移动光标、删除、恢复字符或行 搜索 其他 # 为什么要学习vi命令 ？vi是visual interface的缩写，vim是vi IMproved(增强版的vi)。 Linux很多发行版默认都安装了vi(vim)。 vi/vim是Linux上最常用且很流行的编辑器（除此之外还有emacs、atom等）。 熟练使用vi命令可以提高工作效率。 vim可以使代码高亮显示。 # vi有3个模式：插入模式、命令模式、低行模式 插入模式：在此模式下可以输入字符，按ESC将回到命令模式。 命令模式：可以移动光标、删除字符等。 低行模式：可以保存文件、退出vi、设置vi、查找等功能(低行模式也可以看作是命令模式里的)。 # vi常用命令1.文件的打开、保存、关闭操作(vi命令模式下使用) 命令 释义说明 vi [file] 打开file文件 :w 保存文件 :w [file] 保存至file文件 :q 退出编辑器(未修改) :q! 退出编辑器（不保存修改） :wq 退出编辑器（保存修改） 2.插入模式：插入文本或行(vi命令模式下使用，执行下面命令后将进入插入模式，按ESC键可退出插入模式) 命令 释义说明 a 在当前光标位置的右边添加文本 i 在当前光标位置的左边添加文本 A 在当前行的末尾位置添加文本 I 在当前行的开始处添加文本(非空字符的行首) O 在当前行的上面新建一行 o 在当前行的下面新建一行 R 替换(覆盖)当前光标位置及后面的若干文本 J 合并光标所在行及下一行为一行(依然在命令模式) 3.移动光标(vi命令模式下使用) 使用上下左右方向键 命令模式下： 命令 释义说明 h 向左 j 向下 k 向上 l 向右 空格键 向右 Backspace 向左 Enter 移动到下一行首 - 移动到上一行首 4.删除、恢复字符或行(vi命令模式下使用) 命令 释义说明 x 删除当前字符 nx 删除从光标开始的n个字符 dd 删除当前行 ndd 向下删除当前行在内的n行 u 撤销上一步操作 U 撤销对当前行的所有操作 5.搜索(vi命令模式下使用) 命令 释义说明 /abc 向光标下搜索abc字符串 ?abc 向光标上搜索abc字符串 n 向下搜索前一个搜素动作 N 向上搜索前一个搜索动作 6.跳至指定行(vi命令模式下使用) 命令 释义说明 n+ 向下跳n行 n- 向上跳n行 nG 跳到行号为n的行 G 跳至文件的底部 7.设置行号(vi命令模式下使用) 命令 释义说明 :set nu 显示行号 :set nonu 取消显示行号 8.复制、粘贴(vi命令模式下使用) 命令 释义说明 yy 将当前行复制到缓存区，也可以用 “ayy 复制，”a 为缓冲区，a也可以替换为a到z的任意字母，可以完成多个复制任务。 nyy 将当前行向下n行复制到缓冲区，也可以用 “anyy 复制，”a 为缓冲区，a也可以替换为a到z的任意字母，可以完成多个复制任务。 yw 复制从光标开始到词尾的字符。 nyw 复制从光标开始的n个单词。 y^ 复制从光标到行首的内容。 y$ 复制从光标到行尾的内容。 p 粘贴剪切板里的内容在光标后，如果使用了前面的自定义缓冲区，建议使用”ap 进行粘贴。 P 粘贴剪切板里的内容在光标前，如果使用了前面的自定义缓冲区，建议使用”aP 进行粘贴。 9.替换(vi命令模式下使用) 命令 释义说明 :s/old/new 用new替换行中首次出现的old :s/old/new/g 用new替换行中所有的old :n,m s/old/new/g 用new替换从n到m行里所有的old :%s/old/new/g 用new替换当前文件里所有的old 10.编辑其他文件 命令 释义说明 :e otherfilename 编辑文件名为otherfilename的文件。 11.修改文件格式 命令 释义说明 :set fileformat=unix 将文件修改为unix格式，如win下面的文本文件在linux下会出现^M。 总结：vi(vim)虽然有比较多的命令，但是只要勤加练习，相信你会很快的熟练掌握，同时也会给你的工作或学习带来更高的效率。当如果不知道自己处在什么模式时可以按2次Esc键即可回到命令模式。最后提醒一点：注意大小写！！ 参考连接：Linux上vi(vim)编辑器使用教程]]></content>
-      <categories>
-        <category>code</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-        <tag>vim</tag>
       </tags>
   </entry>
   <entry>
@@ -73,14 +66,14 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Photography]]></title>
-    <url>%2F2017%2F07%2F02%2F2016-12-06-Sony-rx100%20III-photo-note-part-1%2F</url>
-    <content type="text"><![CDATA[影像尺寸分20M、10M、5M，这里不是指文件大小，而是指2000万像素、1000万像素、500万像素,M=Million（百万）。 无论选哪个拍摄和存储速度是一样的。1000万和500万像素是从2000万像素缩放而来的，和软件缩放效果一样的，所以100%看比2000万像素清晰些，噪点也少些。但如果把他们再放大到2000万像素，和原先拍的2000万像素比较就要差一些了，所以一般情况下选2000万像素。以下情况选500万像素： 你拍到卡快满了，到没备用卡，又实在不想删一些照片。 拍一些纸质文字，比如翻拍个日记啥的，500万像素已经很够了，再多也是浪费。 急需上传到网络且画质要求不高的。像素越少文件越小，上传越快。 喜欢100%看图且忍受不了噪点的，黑卡的500万像素同ISO下噪点相当于1600万像素的APS-C相机，还是较干净的，黑卡1000万像素ISO125下也是有明显噪点的。 1. 什么是iso ?定义：iso是由ISO国际标准组织制定的数码相机感光度量化规定。ISO感光度是衡量传统相机所使用胶片感光速度标准的国际统一指标，其反映了胶片感光时的速度（其实是银元素与光线的光化学反应速度）。 简言之，针对数码相机而言，就是感光原件（CMOS或者CCD）的感光速度。ISO数值越高就说明该感光材料的感光能力越强。 公式：ISO的计算公式为S=0.8/H（S感光度，H为曝光量）。从公式中我们可以看出，感光度越高，对曝光量的要求就越少。 特点：ISO数值越高曝光越厉害，噪点越多，看起来越模糊。 2.什么是APS-C相机 ?定义：APS-C相机就是所谓的半幅相机,是目前单反主流格式。数码单反相机的CMOS和 CCD（图像传感器）很多都是“APS-C”画幅。通常是说感光元件尺寸小于35mm胶卷尺寸（36mm x 24mm）的数码相机。 分类：APS定位于业余消费市场，共设计了三种底片画幅(H、C、P)： H型是满画幅(30.3×16.6mm)，长宽比为16:9； C型是在满画幅的左右两头各挡去一端，长宽比为3:2(16.9x24.9)，其对角线长度为29.3mm，折合1.7英寸。aps-c长宽比与135底片同比例； P型是满幅的上下两边各挡去一条，使画面长宽比例为3:1(30.3×10.1mm)，被称为全景模式。 注意：APS-H是满画幅，并非全画幅，全画幅尺寸是34mm x 24mm，满画幅尺寸是30.3mm x 16.6mm。另外由于市场和成本等因素，目前买到的基本都是APS-C画幅的数码相机，APS-H相机很少。 纵横比纵横比有3：2、16：9、4：3和1：1四种。黑卡传感器尺寸为13.2*8.8mm，全像素比例就是3：2，其他几种都是从全像素比例中剪裁的，所以还是选3：2吧，如果以后洗成6寸相片也是3：2，无需剪裁。如果喜欢拍宽屏风景而且直出就选16：9。 影像质量影像质量分RAW、RAW&amp;JPEG、精细、标准，RAW是原始文件，精细和标准都是JPG文件，是经过机内处理过后的成品。 RAW文件大小约20M，精细一般4-8M，标准一般3-5M。一张16G的卡，你选择RAW&amp;JPEG模式拍摄能拍500多张，用JPG模式能拍3000张。 大光比环境下（如逆光、晚上拍开着灯的商店、灯具、在阴影的地方拍到有阳光的天空、白天室内对门外或窗户拍、夕阳等）及过渡丰富的画面（如蓝天）RAW比JPG调整余地大，能找回高光下的更多细节。一般情况下两者差不多。 RAW的后期调整比JPG速度慢，如果电脑配置一般，差别会更明显。 注意：如果连拍时选择RAW格式，连拍速度会明显下降而且存储时间会加倍。 注重后期: 选RAW&amp;JPEG，之所以不单独选RAW，是因为RAW打开后直接导出往往不如机内的JPG好，有时RAW经过种种处理但质感仍不如机内直出JPG。 一般情况: 选精细，遇大光比情况下再选用RAW&amp;JPEG。因为完全不后期的情况比较少，JPG在ACR中可调参数和RAW几乎一样。 纯粹直出: 选标准。 全景影像尺寸、方向，需要模式转盘调到全景模式才能调整相关参数。 模式转盘什么是模式转盘？ 等待继续更新…]]></content>
+    <title><![CDATA[Android ListView]]></title>
+    <url>%2F2017%2F07%2F02%2F2017-01-11-Android-ListView%2F</url>
+    <content type="text"><![CDATA[Android ListView 无数据视图 ListView继承了AdapterView公共方法setEmptyView： 12// Sets the view to show if the adapter is emptypublic void setEmptyView (View emptyView) 这是ListView无数据时显示的视图，当Adapter为空或者无数据的时候显示，可是直接这样做并没有什么效果。 做法一： 无数据的布局文件代码： 1234567891011121314151617181920212223&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" &gt; &lt;LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:gravity="center_horizontal" android:orientation="vertical" &gt; &lt;ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/no_data" /&gt; &lt;TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#ffafafaf" android:textSize="18sp" android:layout_marginTop="8dp" android:text="什么都没有哦~" /&gt; &lt;/LinearLayout&gt;&lt;/RelativeLayout&gt; 布局文件代码：1234567891011121314151617&lt;RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" &gt; &lt;ListView android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/list" /&gt; &lt;include layout="@layout/layout_empty" android:layout_width="match_parent" android:layout_height="match_parent" android:visibility="gone" android:id="@+id/layout_empty" /&gt;&lt;/RelativeLayout&gt; Activity代码： 12345678@Overrideprotected void onCreate(Bundle savedInstanceState) &#123; super.onCreate(savedInstanceState); setContentView(R.layout.activity_listview); ListView listView = (ListView) findViewById(R.id.list); listView.setEmptyView(findViewById(R.id.layout_empty));&#125; 做法二： 布局文件代码： 123456789&lt;RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" &gt; &lt;ListView android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/list" /&gt;&lt;/RelativeLayout&gt; Activity代码： 12345678@Overrideprotected void onCreate(Bundle savedInstanceState) &#123; super.onCreate(savedInstanceState); setContentView(R.layout.activity_listview); ListView listView = ((ListView) findViewById(R.id.list)); View listEmptyView = View.inflate(this, R.layout.layout_empty, (ViewGroup) listView.getParent()); listView.setEmptyView(listEmptyView);&#125; 有数据时相当于如下操作：12listView.setVisibility(View.VISIBLE);listEmptyView.setVisibility(View.GONE); 无数据时如下操作：12listView.setVisibility(View.GONE);listEmptyView.setVisibility(View.VISIBLE); 这样也就能够解释为什么要将listEmptyView添加到listView的同一视图层级上。 它们是两者只显示其一的关系，因此当设置的空数据布局后，listView的header和footer在无数据时候也是不显示的。]]></content>
       <categories>
-        <category>picture</category>
+        <category>code</category>
       </categories>
       <tags>
-        <tag>SONY-RX100 III</tag>
+        <tag>android</tag>
       </tags>
   </entry>
   <entry>
@@ -95,14 +88,14 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Android ListView]]></title>
-    <url>%2F2017%2F07%2F02%2F2017-01-11-Android-ListView%2F</url>
-    <content type="text"><![CDATA[Android ListView 无数据视图 ListView继承了AdapterView公共方法setEmptyView： 12// Sets the view to show if the adapter is emptypublic void setEmptyView (View emptyView) 这是ListView无数据时显示的视图，当Adapter为空或者无数据的时候显示，可是直接这样做并没有什么效果。 做法一： 无数据的布局文件代码： 1234567891011121314151617181920212223&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" &gt; &lt;LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:gravity="center_horizontal" android:orientation="vertical" &gt; &lt;ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/no_data" /&gt; &lt;TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#ffafafaf" android:textSize="18sp" android:layout_marginTop="8dp" android:text="什么都没有哦~" /&gt; &lt;/LinearLayout&gt;&lt;/RelativeLayout&gt; 布局文件代码：1234567891011121314151617&lt;RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" &gt; &lt;ListView android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/list" /&gt; &lt;include layout="@layout/layout_empty" android:layout_width="match_parent" android:layout_height="match_parent" android:visibility="gone" android:id="@+id/layout_empty" /&gt;&lt;/RelativeLayout&gt; Activity代码： 12345678@Overrideprotected void onCreate(Bundle savedInstanceState) &#123; super.onCreate(savedInstanceState); setContentView(R.layout.activity_listview); ListView listView = (ListView) findViewById(R.id.list); listView.setEmptyView(findViewById(R.id.layout_empty));&#125; 做法二： 布局文件代码： 123456789&lt;RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" &gt; &lt;ListView android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/list" /&gt;&lt;/RelativeLayout&gt; Activity代码： 12345678@Overrideprotected void onCreate(Bundle savedInstanceState) &#123; super.onCreate(savedInstanceState); setContentView(R.layout.activity_listview); ListView listView = ((ListView) findViewById(R.id.list)); View listEmptyView = View.inflate(this, R.layout.layout_empty, (ViewGroup) listView.getParent()); listView.setEmptyView(listEmptyView);&#125; 有数据时相当于如下操作：12listView.setVisibility(View.VISIBLE);listEmptyView.setVisibility(View.GONE); 无数据时如下操作：12listView.setVisibility(View.GONE);listEmptyView.setVisibility(View.VISIBLE); 这样也就能够解释为什么要将listEmptyView添加到listView的同一视图层级上。 它们是两者只显示其一的关系，因此当设置的空数据布局后，listView的header和footer在无数据时候也是不显示的。]]></content>
+    <title><![CDATA[Photography]]></title>
+    <url>%2F2017%2F07%2F02%2F2016-12-06-Sony-rx100%20III-photo-note-part-1%2F</url>
+    <content type="text"><![CDATA[影像尺寸分20M、10M、5M，这里不是指文件大小，而是指2000万像素、1000万像素、500万像素,M=Million（百万）。 无论选哪个拍摄和存储速度是一样的。1000万和500万像素是从2000万像素缩放而来的，和软件缩放效果一样的，所以100%看比2000万像素清晰些，噪点也少些。但如果把他们再放大到2000万像素，和原先拍的2000万像素比较就要差一些了，所以一般情况下选2000万像素。以下情况选500万像素： 你拍到卡快满了，到没备用卡，又实在不想删一些照片。 拍一些纸质文字，比如翻拍个日记啥的，500万像素已经很够了，再多也是浪费。 急需上传到网络且画质要求不高的。像素越少文件越小，上传越快。 喜欢100%看图且忍受不了噪点的，黑卡的500万像素同ISO下噪点相当于1600万像素的APS-C相机，还是较干净的，黑卡1000万像素ISO125下也是有明显噪点的。 1. 什么是iso ?定义：iso是由ISO国际标准组织制定的数码相机感光度量化规定。ISO感光度是衡量传统相机所使用胶片感光速度标准的国际统一指标，其反映了胶片感光时的速度（其实是银元素与光线的光化学反应速度）。 简言之，针对数码相机而言，就是感光原件（CMOS或者CCD）的感光速度。ISO数值越高就说明该感光材料的感光能力越强。 公式：ISO的计算公式为S=0.8/H（S感光度，H为曝光量）。从公式中我们可以看出，感光度越高，对曝光量的要求就越少。 特点：ISO数值越高曝光越厉害，噪点越多，看起来越模糊。 2.什么是APS-C相机 ?定义：APS-C相机就是所谓的半幅相机,是目前单反主流格式。数码单反相机的CMOS和 CCD（图像传感器）很多都是“APS-C”画幅。通常是说感光元件尺寸小于35mm胶卷尺寸（36mm x 24mm）的数码相机。 分类：APS定位于业余消费市场，共设计了三种底片画幅(H、C、P)： H型是满画幅(30.3×16.6mm)，长宽比为16:9； C型是在满画幅的左右两头各挡去一端，长宽比为3:2(16.9x24.9)，其对角线长度为29.3mm，折合1.7英寸。aps-c长宽比与135底片同比例； P型是满幅的上下两边各挡去一条，使画面长宽比例为3:1(30.3×10.1mm)，被称为全景模式。 注意：APS-H是满画幅，并非全画幅，全画幅尺寸是34mm x 24mm，满画幅尺寸是30.3mm x 16.6mm。另外由于市场和成本等因素，目前买到的基本都是APS-C画幅的数码相机，APS-H相机很少。 纵横比纵横比有3：2、16：9、4：3和1：1四种。黑卡传感器尺寸为13.2*8.8mm，全像素比例就是3：2，其他几种都是从全像素比例中剪裁的，所以还是选3：2吧，如果以后洗成6寸相片也是3：2，无需剪裁。如果喜欢拍宽屏风景而且直出就选16：9。 影像质量影像质量分RAW、RAW&amp;JPEG、精细、标准，RAW是原始文件，精细和标准都是JPG文件，是经过机内处理过后的成品。 RAW文件大小约20M，精细一般4-8M，标准一般3-5M。一张16G的卡，你选择RAW&amp;JPEG模式拍摄能拍500多张，用JPG模式能拍3000张。 大光比环境下（如逆光、晚上拍开着灯的商店、灯具、在阴影的地方拍到有阳光的天空、白天室内对门外或窗户拍、夕阳等）及过渡丰富的画面（如蓝天）RAW比JPG调整余地大，能找回高光下的更多细节。一般情况下两者差不多。 RAW的后期调整比JPG速度慢，如果电脑配置一般，差别会更明显。 注意：如果连拍时选择RAW格式，连拍速度会明显下降而且存储时间会加倍。 注重后期: 选RAW&amp;JPEG，之所以不单独选RAW，是因为RAW打开后直接导出往往不如机内的JPG好，有时RAW经过种种处理但质感仍不如机内直出JPG。 一般情况: 选精细，遇大光比情况下再选用RAW&amp;JPEG。因为完全不后期的情况比较少，JPG在ACR中可调参数和RAW几乎一样。 纯粹直出: 选标准。 全景影像尺寸、方向，需要模式转盘调到全景模式才能调整相关参数。 模式转盘什么是模式转盘？ 等待继续更新…]]></content>
       <categories>
-        <category>code</category>
+        <category>picture</category>
       </categories>
       <tags>
-        <tag>android</tag>
+        <tag>SONY-RX100 III</tag>
       </tags>
   </entry>
   <entry>
@@ -128,14 +121,15 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Linux中提示No such file or directory解决方法]]></title>
-    <url>%2F2017%2F07%2F02%2F2017-05-12-Linux%E4%B8%AD%E6%8F%90%E7%A4%BANo%20such%20file%20or%20directory%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%2F</url>
-    <content type="text"><![CDATA[解决方法 分析原因，可能因为我平台迁移碰到权限问题我们来进行权限转换 1）在Windows下转换：利用一些编辑器如UltraEdit或EditPlus等工具先将脚本编码转换，再放到Linux中执行。 转换方式如下（UltraEdit）：File–&gt;Conversions–&gt;DOS-&gt;UNIX即可。 2)方法用vim打开xxx.sh脚本文件，输入set ff： 1234567891011121314151617// 用vim打开脚本文件vi xxx.sh // 查看文件格式:set ff // 回车显示文集格式fileformat=dos// 设置文件格式:set ff=unix // 保存并退出:wq!// 再次执行sh xxx.sh 3）当然，也可以在linux中权限转换，同时支持dos和unix两种模式 12345// 确保文件有可执行权限chmod u+x \&lt;filename\&gt; // 修改文件格式vi \&lt;filename\&gt; 三种方法都可以方便快速的解决关于Linux执行.sh文件，提示No such file or directory这个问题了。]]></content>
+    <title><![CDATA[VI Commands]]></title>
+    <url>%2F2017%2F07%2F02%2F2016-05-28-Vi-Editor-Commands%2F</url>
+    <content type="text"><![CDATA[由于最近工作经常要用到linux系统，但是命令都不是太熟悉，现在开始慢慢总结，不断练习，不断学习吧！ # vi的使用教程（比较适合新手学习vi）： 为什么要学习vi命令 vi使用模式 vi常用命令 文件的打开关闭保存 插入文本或新建行 移动光标、删除、恢复字符或行 搜索 其他 # 为什么要学习vi命令 ？vi是visual interface的缩写，vim是vi IMproved(增强版的vi)。 Linux很多发行版默认都安装了vi(vim)。 vi/vim是Linux上最常用且很流行的编辑器（除此之外还有emacs、atom等）。 熟练使用vi命令可以提高工作效率。 vim可以使代码高亮显示。 # vi有3个模式：插入模式、命令模式、低行模式 插入模式：在此模式下可以输入字符，按ESC将回到命令模式。 命令模式：可以移动光标、删除字符等。 低行模式：可以保存文件、退出vi、设置vi、查找等功能(低行模式也可以看作是命令模式里的)。 # vi常用命令1.文件的打开、保存、关闭操作(vi命令模式下使用) 命令 释义说明 vi [file] 打开file文件 :w 保存文件 :w [file] 保存至file文件 :q 退出编辑器(未修改) :q! 退出编辑器（不保存修改） :wq 退出编辑器（保存修改） 2.插入模式：插入文本或行(vi命令模式下使用，执行下面命令后将进入插入模式，按ESC键可退出插入模式) 命令 释义说明 a 在当前光标位置的右边添加文本 i 在当前光标位置的左边添加文本 A 在当前行的末尾位置添加文本 I 在当前行的开始处添加文本(非空字符的行首) O 在当前行的上面新建一行 o 在当前行的下面新建一行 R 替换(覆盖)当前光标位置及后面的若干文本 J 合并光标所在行及下一行为一行(依然在命令模式) 3.移动光标(vi命令模式下使用) 使用上下左右方向键 命令模式下： 命令 释义说明 h 向左 j 向下 k 向上 l 向右 空格键 向右 Backspace 向左 Enter 移动到下一行首 - 移动到上一行首 4.删除、恢复字符或行(vi命令模式下使用) 命令 释义说明 x 删除当前字符 nx 删除从光标开始的n个字符 dd 删除当前行 ndd 向下删除当前行在内的n行 u 撤销上一步操作 U 撤销对当前行的所有操作 5.搜索(vi命令模式下使用) 命令 释义说明 /abc 向光标下搜索abc字符串 ?abc 向光标上搜索abc字符串 n 向下搜索前一个搜素动作 N 向上搜索前一个搜索动作 6.跳至指定行(vi命令模式下使用) 命令 释义说明 n+ 向下跳n行 n- 向上跳n行 nG 跳到行号为n的行 G 跳至文件的底部 7.设置行号(vi命令模式下使用) 命令 释义说明 :set nu 显示行号 :set nonu 取消显示行号 8.复制、粘贴(vi命令模式下使用) 命令 释义说明 yy 将当前行复制到缓存区，也可以用 “ayy 复制，”a 为缓冲区，a也可以替换为a到z的任意字母，可以完成多个复制任务。 nyy 将当前行向下n行复制到缓冲区，也可以用 “anyy 复制，”a 为缓冲区，a也可以替换为a到z的任意字母，可以完成多个复制任务。 yw 复制从光标开始到词尾的字符。 nyw 复制从光标开始的n个单词。 y^ 复制从光标到行首的内容。 y$ 复制从光标到行尾的内容。 p 粘贴剪切板里的内容在光标后，如果使用了前面的自定义缓冲区，建议使用”ap 进行粘贴。 P 粘贴剪切板里的内容在光标前，如果使用了前面的自定义缓冲区，建议使用”aP 进行粘贴。 9.替换(vi命令模式下使用) 命令 释义说明 :s/old/new 用new替换行中首次出现的old :s/old/new/g 用new替换行中所有的old :n,m s/old/new/g 用new替换从n到m行里所有的old :%s/old/new/g 用new替换当前文件里所有的old 10.编辑其他文件 命令 释义说明 :e otherfilename 编辑文件名为otherfilename的文件。 11.修改文件格式 命令 释义说明 :set fileformat=unix 将文件修改为unix格式，如win下面的文本文件在linux下会出现^M。 总结：vi(vim)虽然有比较多的命令，但是只要勤加练习，相信你会很快的熟练掌握，同时也会给你的工作或学习带来更高的效率。当如果不知道自己处在什么模式时可以按2次Esc键即可回到命令模式。最后提醒一点：注意大小写！！ 参考连接：Linux上vi(vim)编辑器使用教程]]></content>
       <categories>
-        <category>Linux</category>
+        <category>code</category>
       </categories>
       <tags>
-        <tag>command</tag>
+        <tag>linux</tag>
+        <tag>vim</tag>
       </tags>
   </entry>
   <entry>
@@ -158,6 +152,17 @@
       </categories>
       <tags>
         <tag>思维导图</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Linux中提示No such file or directory解决方法]]></title>
+    <url>%2F2017%2F07%2F02%2F2017-05-12-Linux%E4%B8%AD%E6%8F%90%E7%A4%BANo%20such%20file%20or%20directory%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[解决方法 分析原因，可能因为我平台迁移碰到权限问题我们来进行权限转换 1）在Windows下转换：利用一些编辑器如UltraEdit或EditPlus等工具先将脚本编码转换，再放到Linux中执行。 转换方式如下（UltraEdit）：File–&gt;Conversions–&gt;DOS-&gt;UNIX即可。 2)方法用vim打开xxx.sh脚本文件，输入set ff： 1234567891011121314151617// 用vim打开脚本文件vi xxx.sh // 查看文件格式:set ff // 回车显示文集格式fileformat=dos// 设置文件格式:set ff=unix // 保存并退出:wq!// 再次执行sh xxx.sh 3）当然，也可以在linux中权限转换，同时支持dos和unix两种模式 12345// 确保文件有可执行权限chmod u+x \&lt;filename\&gt; // 修改文件格式vi \&lt;filename\&gt; 三种方法都可以方便快速的解决关于Linux执行.sh文件，提示No such file or directory这个问题了。]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>command</tag>
       </tags>
   </entry>
   <entry>

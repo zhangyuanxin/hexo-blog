@@ -1127,6 +1127,11 @@ pre .javascript .function {
 }
 @media (max-width: 767px) {
   .posts-expand {
+    padding-top: 0;
+  }
+}
+@media (max-width: 767px) {
+  .posts-expand {
     margin: 0 20px;
   }
   .post-body pre {
@@ -1378,6 +1383,11 @@ pre .javascript .function {
   font-size: 14px;
   margin-top: 2px;
 }
+@media (max-width: 767px) {
+  .posts-expand .post-meta {
+    margin: 3px 0 20px 0;
+  }
+}
 .post-wordcount {
   display: inline-block;
 }
@@ -1531,11 +1541,22 @@ pre .javascript .function {
 .fancybox-close:hover {
   border: none;
 }
-#QR {
+.qr-container {
+  padding: 10px 0;
+  margin: 20px auto;
+  width: 90%;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .qr-container {
+    display: none;
+  }
+}
+.qr-image-box {
   text-align: center;
   margin: 0 auto;
 }
-.reward-dashang {
+.qr-image-icon {
   width: 100px;
   height: 100px;
   background-image: url("../../images/pay/dashang.png");
@@ -1546,7 +1567,7 @@ pre .javascript .function {
   margin: 0 auto;
   cursor: pointer;
 }
-.reward-dashang span {
+.qr-image-icon span {
   font-weight: bolder;
 }
 .post-wordcount {
@@ -1792,7 +1813,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a8c2c6;
+  background: #fb74ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2590,6 +2611,11 @@ pre .javascript .function {
 .page-post-detail .comments {
   overflow: hidden;
 }
+@media (max-width: 767px) and (max-width: 767px) {
+  .posts-expand {
+    margin: 0;
+  }
+}
 .header {
   position: relative;
   margin: 0 auto;
@@ -2671,10 +2697,14 @@ pre .javascript .function {
   padding: 40px;
   width: 700px;
   background: #fff;
-  opacity: 0.8;
   min-height: 700px;
   box-shadow: initial;
   border-radius: initial;
+}
+@media (min-width: 992px) {
+  .content-wrap {
+    opacity: 0.9;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .content-wrap {
@@ -2962,6 +2992,9 @@ pre .javascript .function {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+.post-body {
+  min-height: 400px;
 }
 @media (max-width: 767px) {
   .post-body {
