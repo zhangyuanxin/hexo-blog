@@ -415,7 +415,7 @@
 
       
         <h3 id="平安夜快乐！"><a href="#平安夜快乐！" class="headerlink" title="平安夜快乐！"></a>平安夜快乐！</h3>
-    <div id="aplayer-xceaxQaK" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="2569691939" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"></div>
+    <div id="aplayer-oQULVZDP" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="2569691939" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"></div>
 
       
     </div>
@@ -504,8 +504,6 @@
 
           
   <div class="comments" id="comments">
-    
-    <div id="vcomments"></div>
     
   </div>
 
@@ -836,6 +834,30 @@
 
 
 
+
+
+
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script type="text/javascript">
+  var GUEST = ['nick','mail','link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(item=>{
+    return GUEST.indexOf(item)>-1;
+  });
+  new Valine({
+    el: '#comments' ,
+    verify: false,
+    notify: false,
+    appId: 'Uj9zUPSKqB2oQEqMjkGIkvPW-gzGzoHsz',
+    appKey: 'wgySQS66BGqhOn6kdRSqEjxY',
+    placeholder: 'just go go',
+    avatar:'mm',
+    guest_info: guest,
+    pageSize: '10' || 10,
+  });
+</script>
 
 
 

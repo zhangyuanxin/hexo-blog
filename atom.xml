@@ -23,7 +23,7 @@
     <published>2018-12-24T16:40:45.000Z</published>
     <updated>2018-12-26T16:11:53.564Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="平安夜快乐！"><a href="#平安夜快乐！" class="headerlink" title="平安夜快乐！"></a>平安夜快乐！</h3>    <div id="aplayer-xceaxQaK" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="2569691939" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"></div>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="平安夜快乐！"><a href="#平安夜快乐！" class="headerlink" title="平安夜快乐！"></a>平安夜快乐！</h3>    <div id="aplayer-oQULVZDP" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="2569691939" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"></div>]]></content>
     
     <summary type="html">
     
@@ -59,29 +59,6 @@
     
     
       <category term="nginx" scheme="http://uiplus.org/tags/nginx/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Personal Plans</title>
-    <link href="http://uiplus.org/2017/07/02/2016-09-28-Personal-Plans/"/>
-    <id>http://uiplus.org/2017/07/02/2016-09-28-Personal-Plans/</id>
-    <published>2017-07-02T06:48:19.000Z</published>
-    <updated>2017-07-02T06:48:19.000Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><div id="toc"></div><h2 id="关于自己的愿望"><a href="#关于自己的愿望" class="headerlink" title="关于自己的愿望"></a>关于自己的愿望</h2><p><i class="fa fa-quote-left fa-3x"></i> 关于个人计划，大多数人应该都制定过。本人尝试过制定并完成一些，但是大部分都是十分钟热度，真正执行的没有几个，多半执行一段时间就会感觉疲劳或者忘记了，针对这些希望自己整理一下自己近阶段希望做的一些事情和计划，以免将来后悔莫及。”</p><h2 id="读书"><a href="#读书" class="headerlink" title="# 读书"></a># 读书</h2><blockquote><p>读万卷书</p></blockquote><ol><li>近期读书列表：</li></ol><ul><li>《java编程思想》</li><li>《java高级特性》</li><li>《编程珠玑》</li><li>《设计模式》</li><li>《重构》</li><li>《jquery基础教程》</li></ul><h2 id="旅游"><a href="#旅游" class="headerlink" title="# 旅游"></a># 旅游</h2><blockquote><p>行万里路</p></blockquote><ol><li>未去的地方：</li></ol><ul><li>南京（古建筑、先锋书店）</li><li>杭州（杭州西湖、建筑）</li><li>厦门（鼓浪屿、厦门大学）</li><li>成都（九寨沟）</li><li>西藏（雪山、青海湖的青稞）</li><li>内蒙古（草原）</li><li>三亚（潜水）</li></ul><ol><li>去过的地方：</li></ol><ul><li>大连</li><li>青岛</li><li>济南</li><li>北京</li><li>广州</li><li>泰安</li></ul><p>最想去的国家：</p><ul><li>日本</li><li>德国</li><li>美国</li></ul><p>最想移民的国家：</p><ul><li>德国</li></ul><h2 id="生活"><a href="#生活" class="headerlink" title="# 生活"></a># 生活</h2><blockquote><p>生活源于折腾</p></blockquote><ul><li>驾照</li><li>购房</li><li>女票</li></ul><p>作息调整：朝8 - 晚10</p><p>饮食调整：制定合理的食谱，早餐、午餐、晚餐</p><p>运动调整：跑步、篮球、羽毛球、乒乓球</p><p>健身计划：报名参加健身俱乐部</p><p>自闭症&amp;抑郁症：多出去走走，听听繁杂的世界</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
-      
-    
-    </summary>
-    
-      <category term="plan" scheme="http://uiplus.org/categories/plan/"/>
-    
     
   </entry>
   
@@ -136,6 +113,29 @@
   </entry>
   
   <entry>
+    <title>Personal Plans</title>
+    <link href="http://uiplus.org/2017/07/02/2016-09-28-Personal-Plans/"/>
+    <id>http://uiplus.org/2017/07/02/2016-09-28-Personal-Plans/</id>
+    <published>2017-07-02T06:48:19.000Z</published>
+    <updated>2017-07-02T06:48:19.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><div id="toc"></div><h2 id="关于自己的愿望"><a href="#关于自己的愿望" class="headerlink" title="关于自己的愿望"></a>关于自己的愿望</h2><p><i class="fa fa-quote-left fa-3x"></i> 关于个人计划，大多数人应该都制定过。本人尝试过制定并完成一些，但是大部分都是十分钟热度，真正执行的没有几个，多半执行一段时间就会感觉疲劳或者忘记了，针对这些希望自己整理一下自己近阶段希望做的一些事情和计划，以免将来后悔莫及。”</p><h2 id="读书"><a href="#读书" class="headerlink" title="# 读书"></a># 读书</h2><blockquote><p>读万卷书</p></blockquote><ol><li>近期读书列表：</li></ol><ul><li>《java编程思想》</li><li>《java高级特性》</li><li>《编程珠玑》</li><li>《设计模式》</li><li>《重构》</li><li>《jquery基础教程》</li></ul><h2 id="旅游"><a href="#旅游" class="headerlink" title="# 旅游"></a># 旅游</h2><blockquote><p>行万里路</p></blockquote><ol><li>未去的地方：</li></ol><ul><li>南京（古建筑、先锋书店）</li><li>杭州（杭州西湖、建筑）</li><li>厦门（鼓浪屿、厦门大学）</li><li>成都（九寨沟）</li><li>西藏（雪山、青海湖的青稞）</li><li>内蒙古（草原）</li><li>三亚（潜水）</li></ul><ol><li>去过的地方：</li></ol><ul><li>大连</li><li>青岛</li><li>济南</li><li>北京</li><li>广州</li><li>泰安</li></ul><p>最想去的国家：</p><ul><li>日本</li><li>德国</li><li>美国</li></ul><p>最想移民的国家：</p><ul><li>德国</li></ul><h2 id="生活"><a href="#生活" class="headerlink" title="# 生活"></a># 生活</h2><blockquote><p>生活源于折腾</p></blockquote><ul><li>驾照</li><li>购房</li><li>女票</li></ul><p>作息调整：朝8 - 晚10</p><p>饮食调整：制定合理的食谱，早餐、午餐、晚餐</p><p>运动调整：跑步、篮球、羽毛球、乒乓球</p><p>健身计划：报名参加健身俱乐部</p><p>自闭症&amp;抑郁症：多出去走走，听听繁杂的世界</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+      <category term="plan" scheme="http://uiplus.org/categories/plan/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Android Problems</title>
     <link href="http://uiplus.org/2017/07/02/2016-11-16-Android-Setup-Problems/"/>
     <id>http://uiplus.org/2017/07/02/2016-11-16-Android-Setup-Problems/</id>
@@ -161,28 +161,6 @@
   </entry>
   
   <entry>
-    <title>Photography</title>
-    <link href="http://uiplus.org/2017/07/02/2016-12-06-Sony-rx100%20III-photo-note-part-1/"/>
-    <id>http://uiplus.org/2017/07/02/2016-12-06-Sony-rx100 III-photo-note-part-1/</id>
-    <published>2017-07-02T06:48:19.000Z</published>
-    <updated>2017-07-02T06:48:19.000Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="影像尺寸"><a href="#影像尺寸" class="headerlink" title="影像尺寸"></a>影像尺寸</h3><p>分20M、10M、5M，这里不是指文件大小，而是指2000万像素、1000万像素、500万像素,M=Million（百万）。</p><p>无论选哪个拍摄和存储速度是一样的。1000万和500万像素是从2000万像素缩放而来的，和软件缩放效果一样的，所以100%看比2000万像素清晰些，噪点也少些。但如果把他们再放大到2000万像素，和原先拍的2000万像素比较就要差一些了，所以一般情况下选2000万像素。以下情况选500万像素：</p><ul><li><p>你拍到卡快满了，到没备用卡，又实在不想删一些照片。</p></li><li><p>拍一些纸质文字，比如翻拍个日记啥的，500万像素已经很够了，再多也是浪费。</p></li><li><p>急需上传到网络且画质要求不高的。像素越少文件越小，上传越快。</p></li><li><p>喜欢100%看图且忍受不了噪点的，黑卡的500万像素同ISO下噪点相当于1600万像素的APS-C相机，还是较干净的，黑卡1000万像素ISO125下也是有明显噪点的。</p></li></ul><h4 id="1-什么是iso"><a href="#1-什么是iso" class="headerlink" title="1. 什么是iso ?"></a>1. 什么是iso ?</h4><p>定义：iso是由ISO国际标准组织制定的数码相机感光度量化规定。ISO感光度是衡量传统相机所使用胶片感光速度标准的国际统一指标，其反映了胶片感光时的速度（其实是银元素与光线的光化学反应速度）。</p><p>简言之，针对数码相机而言，就是感光原件（CMOS或者CCD）的感光速度。ISO数值越高就说明该感光材料的感光能力越强。</p><p>公式：ISO的计算公式为S=0.8/H（S感光度，H为曝光量）。从公式中我们可以看出，感光度越高，对曝光量的要求就越少。</p><p>特点：ISO数值越高曝光越厉害，噪点越多，看起来越模糊。</p><h4 id="2-什么是APS-C相机"><a href="#2-什么是APS-C相机" class="headerlink" title="2.什么是APS-C相机 ?"></a>2.什么是APS-C相机 ?</h4><p>定义：APS-C相机就是所谓的半幅相机,是目前单反主流格式。数码单反相机的CMOS和 CCD（图像传感器）很多都是“APS-C”画幅。通常是说感光元件尺寸小于35mm胶卷尺寸（36mm x 24mm）的数码相机。</p><p><img src="/assets/images/2016-12-06/aps-cmos.jpg" alt="aps-c"></p><p>分类：APS定位于业余消费市场，共设计了三种底片画幅(H、C、P)：</p><p><img src="/assets/images/2016-12-06/aps-c.jpg" alt="aps-c"></p><ul><li>H型是满画幅(30.3×16.6mm)，长宽比为16:9；</li><li>C型是在满画幅的左右两头各挡去一端，长宽比为3:2(16.9x24.9)，其对角线长度为29.3mm，折合1.7英寸。aps-c长宽比与135底片同比例；</li><li>P型是满幅的上下两边各挡去一条，使画面长宽比例为3:1(30.3×10.1mm)，被称为全景模式。</li></ul><p>注意：APS-H是满画幅，并非全画幅，全画幅尺寸是34mm x 24mm，满画幅尺寸是30.3mm x 16.6mm。另外由于市场和成本等因素，目前买到的基本都是APS-C画幅的数码相机，APS-H相机很少。</p><h3 id="纵横比"><a href="#纵横比" class="headerlink" title="纵横比"></a>纵横比</h3><p>纵横比有3：2、16：9、4：3和1：1四种。黑卡传感器尺寸为13.2*8.8mm，全像素比例就是3：2，其他几种都是从全像素比例中剪裁的，所以还是选3：2吧，如果以后洗成6寸相片也是3：2，无需剪裁。如果喜欢拍宽屏风景而且直出就选16：9。</p><h3 id="影像质量"><a href="#影像质量" class="headerlink" title="影像质量"></a>影像质量</h3><p>影像质量分RAW、RAW&amp;JPEG、精细、标准，RAW是原始文件，精细和标准都是JPG文件，是经过机内处理过后的成品。</p><p>RAW文件大小约20M，精细一般4-8M，标准一般3-5M。一张16G的卡，你选择RAW&amp;JPEG模式拍摄能拍500多张，用JPG模式能拍3000张。</p><p>大光比环境下（如逆光、晚上拍开着灯的商店、灯具、在阴影的地方拍到有阳光的天空、白天室内对门外或窗户拍、夕阳等）及过渡丰富的画面（如蓝天）RAW比JPG调整余地大，能找回高光下的更多细节。一般情况下两者差不多。</p><p>RAW的后期调整比JPG速度慢，如果电脑配置一般，差别会更明显。</p><p>注意：如果连拍时选择RAW格式，连拍速度会明显下降而且存储时间会加倍。</p><ul><li><strong>注重后期</strong>: 选RAW&amp;JPEG，之所以不单独选RAW，是因为RAW打开后直接导出往往不如机内的JPG好，有时RAW经过种种处理但质感仍不如机内直出JPG。</li><li><strong>一般情况</strong>: 选精细，遇大光比情况下再选用RAW&amp;JPEG。因为完全不后期的情况比较少，JPG在ACR中可调参数和RAW几乎一样。</li><li><strong>纯粹直出</strong>: 选标准。</li></ul><h3 id="全景"><a href="#全景" class="headerlink" title="全景"></a>全景</h3><p>影像尺寸、方向，需要模式转盘调到全景模式才能调整相关参数。</p><h3 id="模式转盘"><a href="#模式转盘" class="headerlink" title="模式转盘"></a>模式转盘</h3><p>什么是模式转盘？</p><p>等待继续更新…</p>]]></content>
-    
-    <summary type="html">
-    
-      take pictures/ISO &amp; APS-C
-    
-    </summary>
-    
-      <category term="picture" scheme="http://uiplus.org/categories/picture/"/>
-    
-    
-      <category term="SONY-RX100 III" scheme="http://uiplus.org/tags/SONY-RX100-III/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Photoshop</title>
     <link href="http://uiplus.org/2017/07/02/2016-11-19-Photoshop-And-Chinese-Crafts/"/>
     <id>http://uiplus.org/2017/07/02/2016-11-19-Photoshop-And-Chinese-Crafts/</id>
@@ -204,6 +182,28 @@
     
     
       <category term="photoshop" scheme="http://uiplus.org/tags/photoshop/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Photography</title>
+    <link href="http://uiplus.org/2017/07/02/2016-12-06-Sony-rx100%20III-photo-note-part-1/"/>
+    <id>http://uiplus.org/2017/07/02/2016-12-06-Sony-rx100 III-photo-note-part-1/</id>
+    <published>2017-07-02T06:48:19.000Z</published>
+    <updated>2017-07-02T06:48:19.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="影像尺寸"><a href="#影像尺寸" class="headerlink" title="影像尺寸"></a>影像尺寸</h3><p>分20M、10M、5M，这里不是指文件大小，而是指2000万像素、1000万像素、500万像素,M=Million（百万）。</p><p>无论选哪个拍摄和存储速度是一样的。1000万和500万像素是从2000万像素缩放而来的，和软件缩放效果一样的，所以100%看比2000万像素清晰些，噪点也少些。但如果把他们再放大到2000万像素，和原先拍的2000万像素比较就要差一些了，所以一般情况下选2000万像素。以下情况选500万像素：</p><ul><li><p>你拍到卡快满了，到没备用卡，又实在不想删一些照片。</p></li><li><p>拍一些纸质文字，比如翻拍个日记啥的，500万像素已经很够了，再多也是浪费。</p></li><li><p>急需上传到网络且画质要求不高的。像素越少文件越小，上传越快。</p></li><li><p>喜欢100%看图且忍受不了噪点的，黑卡的500万像素同ISO下噪点相当于1600万像素的APS-C相机，还是较干净的，黑卡1000万像素ISO125下也是有明显噪点的。</p></li></ul><h4 id="1-什么是iso"><a href="#1-什么是iso" class="headerlink" title="1. 什么是iso ?"></a>1. 什么是iso ?</h4><p>定义：iso是由ISO国际标准组织制定的数码相机感光度量化规定。ISO感光度是衡量传统相机所使用胶片感光速度标准的国际统一指标，其反映了胶片感光时的速度（其实是银元素与光线的光化学反应速度）。</p><p>简言之，针对数码相机而言，就是感光原件（CMOS或者CCD）的感光速度。ISO数值越高就说明该感光材料的感光能力越强。</p><p>公式：ISO的计算公式为S=0.8/H（S感光度，H为曝光量）。从公式中我们可以看出，感光度越高，对曝光量的要求就越少。</p><p>特点：ISO数值越高曝光越厉害，噪点越多，看起来越模糊。</p><h4 id="2-什么是APS-C相机"><a href="#2-什么是APS-C相机" class="headerlink" title="2.什么是APS-C相机 ?"></a>2.什么是APS-C相机 ?</h4><p>定义：APS-C相机就是所谓的半幅相机,是目前单反主流格式。数码单反相机的CMOS和 CCD（图像传感器）很多都是“APS-C”画幅。通常是说感光元件尺寸小于35mm胶卷尺寸（36mm x 24mm）的数码相机。</p><p><img src="/assets/images/2016-12-06/aps-cmos.jpg" alt="aps-c"></p><p>分类：APS定位于业余消费市场，共设计了三种底片画幅(H、C、P)：</p><p><img src="/assets/images/2016-12-06/aps-c.jpg" alt="aps-c"></p><ul><li>H型是满画幅(30.3×16.6mm)，长宽比为16:9；</li><li>C型是在满画幅的左右两头各挡去一端，长宽比为3:2(16.9x24.9)，其对角线长度为29.3mm，折合1.7英寸。aps-c长宽比与135底片同比例；</li><li>P型是满幅的上下两边各挡去一条，使画面长宽比例为3:1(30.3×10.1mm)，被称为全景模式。</li></ul><p>注意：APS-H是满画幅，并非全画幅，全画幅尺寸是34mm x 24mm，满画幅尺寸是30.3mm x 16.6mm。另外由于市场和成本等因素，目前买到的基本都是APS-C画幅的数码相机，APS-H相机很少。</p><h3 id="纵横比"><a href="#纵横比" class="headerlink" title="纵横比"></a>纵横比</h3><p>纵横比有3：2、16：9、4：3和1：1四种。黑卡传感器尺寸为13.2*8.8mm，全像素比例就是3：2，其他几种都是从全像素比例中剪裁的，所以还是选3：2吧，如果以后洗成6寸相片也是3：2，无需剪裁。如果喜欢拍宽屏风景而且直出就选16：9。</p><h3 id="影像质量"><a href="#影像质量" class="headerlink" title="影像质量"></a>影像质量</h3><p>影像质量分RAW、RAW&amp;JPEG、精细、标准，RAW是原始文件，精细和标准都是JPG文件，是经过机内处理过后的成品。</p><p>RAW文件大小约20M，精细一般4-8M，标准一般3-5M。一张16G的卡，你选择RAW&amp;JPEG模式拍摄能拍500多张，用JPG模式能拍3000张。</p><p>大光比环境下（如逆光、晚上拍开着灯的商店、灯具、在阴影的地方拍到有阳光的天空、白天室内对门外或窗户拍、夕阳等）及过渡丰富的画面（如蓝天）RAW比JPG调整余地大，能找回高光下的更多细节。一般情况下两者差不多。</p><p>RAW的后期调整比JPG速度慢，如果电脑配置一般，差别会更明显。</p><p>注意：如果连拍时选择RAW格式，连拍速度会明显下降而且存储时间会加倍。</p><ul><li><strong>注重后期</strong>: 选RAW&amp;JPEG，之所以不单独选RAW，是因为RAW打开后直接导出往往不如机内的JPG好，有时RAW经过种种处理但质感仍不如机内直出JPG。</li><li><strong>一般情况</strong>: 选精细，遇大光比情况下再选用RAW&amp;JPEG。因为完全不后期的情况比较少，JPG在ACR中可调参数和RAW几乎一样。</li><li><strong>纯粹直出</strong>: 选标准。</li></ul><h3 id="全景"><a href="#全景" class="headerlink" title="全景"></a>全景</h3><p>影像尺寸、方向，需要模式转盘调到全景模式才能调整相关参数。</p><h3 id="模式转盘"><a href="#模式转盘" class="headerlink" title="模式转盘"></a>模式转盘</h3><p>什么是模式转盘？</p><p>等待继续更新…</p>]]></content>
+    
+    <summary type="html">
+    
+      take pictures/ISO &amp; APS-C
+    
+    </summary>
+    
+      <category term="picture" scheme="http://uiplus.org/categories/picture/"/>
+    
+    
+      <category term="SONY-RX100 III" scheme="http://uiplus.org/tags/SONY-RX100-III/"/>
     
   </entry>
   
@@ -283,6 +283,31 @@
   </entry>
   
   <entry>
+    <title>免费开源的思维导图软件推荐</title>
+    <link href="http://uiplus.org/2017/07/02/2017-04-27-%E5%85%8D%E8%B4%B9%E5%BC%80%E6%BA%90%E7%9A%84%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
+    <id>http://uiplus.org/2017/07/02/2017-04-27-免费开源的思维导图软件推荐/</id>
+    <published>2017-07-02T06:48:19.000Z</published>
+    <updated>2017-07-02T06:48:19.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>思维导图也叫心智图，是一项流行的全脑式学习方法，用来表示词，思路，任务或其他与围绕着一个中央关键词或想法项目的示意图。<br>通过径向，图形和非线性的方式提出意见，思维导图鼓励头脑风暴的方法来规划和组织任务。<br>虽然思维导图的分支表示分层树形结构，其放射状排列扰乱通常与呈现更加线性的视觉线索层次相关概念的优先次序。</p><ol><li><p>XMind<br>XMind 是一个开源项目，这意味着它可以免费下载并自由地使用。<br>XMind 也有 Plus/Pro 版本，提供更专业的功能。<br>除了地图结构， XMind 同时也提供树，逻辑和鱼骨图，具有内置拼写检查，搜索，加密，甚至是音频笔记功能。</p></li><li><p>Coggle<br>Coggle 是一个免费的在线协作思维导图工具，让您直观地用一个精美的呈现分支结构定义的连接。<br>它可以让你制作出漂亮的笔记，方便快捷。与朋友和同事分享，和他们协同工作，展现你的想法。</p></li><li><p>FreeMind<br>FreeMind 是用 Java 编写的免费心智图软件。最近的发展希望把它变成高生产力的工具。<br>操作 FreeMind 的导航比 MindManager 快，因为它有一键式“折叠/展开”和“跟随链接”操作。</p></li><li><p>MindManager<br>MindManager 是倍受赞誉、最好的思维导图软件。<br>这款强大的思维导图工具可以让你在一个单一的视图组织你的想法，在这里你可以轻松地拖放操作和优先考虑你的想法。<br>添加图像，视频，超链接和附件都非常简单，让你简单的把想法付诸行动了。<br>想了解更多信息，可以关注中文官网：<a href="http://www.mindmanager.cc/。" target="_blank" rel="external">http://www.mindmanager.cc/。</a></p></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+      <category term="tool" scheme="http://uiplus.org/categories/tool/"/>
+    
+    
+      <category term="思维导图" scheme="http://uiplus.org/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Linux文件查找命令find和whereis用法</title>
     <link href="http://uiplus.org/2017/07/02/2017-04-27-Linux%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE%E5%91%BD%E4%BB%A4find%E5%92%8Cwhereis%E7%94%A8%E6%B3%95/"/>
     <id>http://uiplus.org/2017/07/02/2017-04-27-Linux文件查找命令find和whereis用法/</id>
@@ -329,31 +354,6 @@
     
     
       <category term="nginx" scheme="http://uiplus.org/tags/nginx/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>免费开源的思维导图软件推荐</title>
-    <link href="http://uiplus.org/2017/07/02/2017-04-27-%E5%85%8D%E8%B4%B9%E5%BC%80%E6%BA%90%E7%9A%84%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
-    <id>http://uiplus.org/2017/07/02/2017-04-27-免费开源的思维导图软件推荐/</id>
-    <published>2017-07-02T06:48:19.000Z</published>
-    <updated>2017-07-02T06:48:19.000Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>思维导图也叫心智图，是一项流行的全脑式学习方法，用来表示词，思路，任务或其他与围绕着一个中央关键词或想法项目的示意图。<br>通过径向，图形和非线性的方式提出意见，思维导图鼓励头脑风暴的方法来规划和组织任务。<br>虽然思维导图的分支表示分层树形结构，其放射状排列扰乱通常与呈现更加线性的视觉线索层次相关概念的优先次序。</p><ol><li><p>XMind<br>XMind 是一个开源项目，这意味着它可以免费下载并自由地使用。<br>XMind 也有 Plus/Pro 版本，提供更专业的功能。<br>除了地图结构， XMind 同时也提供树，逻辑和鱼骨图，具有内置拼写检查，搜索，加密，甚至是音频笔记功能。</p></li><li><p>Coggle<br>Coggle 是一个免费的在线协作思维导图工具，让您直观地用一个精美的呈现分支结构定义的连接。<br>它可以让你制作出漂亮的笔记，方便快捷。与朋友和同事分享，和他们协同工作，展现你的想法。</p></li><li><p>FreeMind<br>FreeMind 是用 Java 编写的免费心智图软件。最近的发展希望把它变成高生产力的工具。<br>操作 FreeMind 的导航比 MindManager 快，因为它有一键式“折叠/展开”和“跟随链接”操作。</p></li><li><p>MindManager<br>MindManager 是倍受赞誉、最好的思维导图软件。<br>这款强大的思维导图工具可以让你在一个单一的视图组织你的想法，在这里你可以轻松地拖放操作和优先考虑你的想法。<br>添加图像，视频，超链接和附件都非常简单，让你简单的把想法付诸行动了。<br>想了解更多信息，可以关注中文官网：<a href="http://www.mindmanager.cc/。" target="_blank" rel="external">http://www.mindmanager.cc/。</a></p></li></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
-      
-    
-    </summary>
-    
-      <category term="tool" scheme="http://uiplus.org/categories/tool/"/>
-    
-    
-      <category term="思维导图" scheme="http://uiplus.org/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/"/>
     
   </entry>
   
