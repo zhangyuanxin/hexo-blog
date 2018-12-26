@@ -23,7 +23,7 @@
     <published>2018-12-24T16:40:45.000Z</published>
     <updated>2018-12-26T16:11:53.564Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="平安夜快乐！"><a href="#平安夜快乐！" class="headerlink" title="平安夜快乐！"></a>平安夜快乐！</h3>    <div id="aplayer-oQULVZDP" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="2569691939" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"></div>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="平安夜快乐！"><a href="#平安夜快乐！" class="headerlink" title="平安夜快乐！"></a>平安夜快乐！</h3>    <div id="aplayer-PSUrlrna" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="2569691939" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"></div>]]></content>
     
     <summary type="html">
     
@@ -63,6 +63,29 @@
   </entry>
   
   <entry>
+    <title>Personal Plans</title>
+    <link href="http://uiplus.org/2017/07/02/2016-09-28-Personal-Plans/"/>
+    <id>http://uiplus.org/2017/07/02/2016-09-28-Personal-Plans/</id>
+    <published>2017-07-02T06:48:19.000Z</published>
+    <updated>2017-07-02T06:48:19.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><div id="toc"></div><h2 id="关于自己的愿望"><a href="#关于自己的愿望" class="headerlink" title="关于自己的愿望"></a>关于自己的愿望</h2><p><i class="fa fa-quote-left fa-3x"></i> 关于个人计划，大多数人应该都制定过。本人尝试过制定并完成一些，但是大部分都是十分钟热度，真正执行的没有几个，多半执行一段时间就会感觉疲劳或者忘记了，针对这些希望自己整理一下自己近阶段希望做的一些事情和计划，以免将来后悔莫及。”</p><h2 id="读书"><a href="#读书" class="headerlink" title="# 读书"></a># 读书</h2><blockquote><p>读万卷书</p></blockquote><ol><li>近期读书列表：</li></ol><ul><li>《java编程思想》</li><li>《java高级特性》</li><li>《编程珠玑》</li><li>《设计模式》</li><li>《重构》</li><li>《jquery基础教程》</li></ul><h2 id="旅游"><a href="#旅游" class="headerlink" title="# 旅游"></a># 旅游</h2><blockquote><p>行万里路</p></blockquote><ol><li>未去的地方：</li></ol><ul><li>南京（古建筑、先锋书店）</li><li>杭州（杭州西湖、建筑）</li><li>厦门（鼓浪屿、厦门大学）</li><li>成都（九寨沟）</li><li>西藏（雪山、青海湖的青稞）</li><li>内蒙古（草原）</li><li>三亚（潜水）</li></ul><ol><li>去过的地方：</li></ol><ul><li>大连</li><li>青岛</li><li>济南</li><li>北京</li><li>广州</li><li>泰安</li></ul><p>最想去的国家：</p><ul><li>日本</li><li>德国</li><li>美国</li></ul><p>最想移民的国家：</p><ul><li>德国</li></ul><h2 id="生活"><a href="#生活" class="headerlink" title="# 生活"></a># 生活</h2><blockquote><p>生活源于折腾</p></blockquote><ul><li>驾照</li><li>购房</li><li>女票</li></ul><p>作息调整：朝8 - 晚10</p><p>饮食调整：制定合理的食谱，早餐、午餐、晚餐</p><p>运动调整：跑步、篮球、羽毛球、乒乓球</p><p>健身计划：报名参加健身俱乐部</p><p>自闭症&amp;抑郁症：多出去走走，听听繁杂的世界</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+      <category term="plan" scheme="http://uiplus.org/categories/plan/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>VI Commands</title>
     <link href="http://uiplus.org/2017/07/02/2016-05-28-Vi-Editor-Commands/"/>
     <id>http://uiplus.org/2017/07/02/2016-05-28-Vi-Editor-Commands/</id>
@@ -86,52 +109,6 @@
       <category term="linux" scheme="http://uiplus.org/tags/linux/"/>
     
       <category term="vim" scheme="http://uiplus.org/tags/vim/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>The Youth Day</title>
-    <link href="http://uiplus.org/2017/07/02/2016-05-04-%E7%AC%AC24%E4%B8%AA%E4%BA%94%E5%9B%9B%E9%9D%92%E5%B9%B4%E8%8A%82/"/>
-    <id>http://uiplus.org/2017/07/02/2016-05-04-第24个五四青年节/</id>
-    <published>2017-07-02T06:48:19.000Z</published>
-    <updated>2017-07-02T06:48:19.000Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><pre><code>今天终于搭建起了自己的Blog了，了却了建立博客的心结，也算是一种欣慰，期间的折腾就不一一细说了。</code></pre><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;有时候想写某些东西出来的时候，又不想被所有的朋友看到，至少不像在公众社交软件上发表<br>某些东西后，引人议论或是被各种调侃。当然这种想法或许本身就有问题，对于某些人而言既然想写，<br>又何必在乎别人的看法呢？现在虽然不是第一次写博客，却是第一次在自己的博客网站上写博客，<br>Fighting！</p><p>  馨</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
-      
-    
-    </summary>
-    
-      <category term="life" scheme="http://uiplus.org/categories/life/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Personal Plans</title>
-    <link href="http://uiplus.org/2017/07/02/2016-09-28-Personal-Plans/"/>
-    <id>http://uiplus.org/2017/07/02/2016-09-28-Personal-Plans/</id>
-    <published>2017-07-02T06:48:19.000Z</published>
-    <updated>2017-07-02T06:48:19.000Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><div id="toc"></div><h2 id="关于自己的愿望"><a href="#关于自己的愿望" class="headerlink" title="关于自己的愿望"></a>关于自己的愿望</h2><p><i class="fa fa-quote-left fa-3x"></i> 关于个人计划，大多数人应该都制定过。本人尝试过制定并完成一些，但是大部分都是十分钟热度，真正执行的没有几个，多半执行一段时间就会感觉疲劳或者忘记了，针对这些希望自己整理一下自己近阶段希望做的一些事情和计划，以免将来后悔莫及。”</p><h2 id="读书"><a href="#读书" class="headerlink" title="# 读书"></a># 读书</h2><blockquote><p>读万卷书</p></blockquote><ol><li>近期读书列表：</li></ol><ul><li>《java编程思想》</li><li>《java高级特性》</li><li>《编程珠玑》</li><li>《设计模式》</li><li>《重构》</li><li>《jquery基础教程》</li></ul><h2 id="旅游"><a href="#旅游" class="headerlink" title="# 旅游"></a># 旅游</h2><blockquote><p>行万里路</p></blockquote><ol><li>未去的地方：</li></ol><ul><li>南京（古建筑、先锋书店）</li><li>杭州（杭州西湖、建筑）</li><li>厦门（鼓浪屿、厦门大学）</li><li>成都（九寨沟）</li><li>西藏（雪山、青海湖的青稞）</li><li>内蒙古（草原）</li><li>三亚（潜水）</li></ul><ol><li>去过的地方：</li></ol><ul><li>大连</li><li>青岛</li><li>济南</li><li>北京</li><li>广州</li><li>泰安</li></ul><p>最想去的国家：</p><ul><li>日本</li><li>德国</li><li>美国</li></ul><p>最想移民的国家：</p><ul><li>德国</li></ul><h2 id="生活"><a href="#生活" class="headerlink" title="# 生活"></a># 生活</h2><blockquote><p>生活源于折腾</p></blockquote><ul><li>驾照</li><li>购房</li><li>女票</li></ul><p>作息调整：朝8 - 晚10</p><p>饮食调整：制定合理的食谱，早餐、午餐、晚餐</p><p>运动调整：跑步、篮球、羽毛球、乒乓球</p><p>健身计划：报名参加健身俱乐部</p><p>自闭症&amp;抑郁症：多出去走走，听听繁杂的世界</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
-      
-    
-    </summary>
-    
-      <category term="plan" scheme="http://uiplus.org/categories/plan/"/>
-    
     
   </entry>
   
@@ -161,13 +138,13 @@
   </entry>
   
   <entry>
-    <title>Photoshop</title>
-    <link href="http://uiplus.org/2017/07/02/2016-11-19-Photoshop-And-Chinese-Crafts/"/>
-    <id>http://uiplus.org/2017/07/02/2016-11-19-Photoshop-And-Chinese-Crafts/</id>
+    <title>The Youth Day</title>
+    <link href="http://uiplus.org/2017/07/02/2016-05-04-%E7%AC%AC24%E4%B8%AA%E4%BA%94%E5%9B%9B%E9%9D%92%E5%B9%B4%E8%8A%82/"/>
+    <id>http://uiplus.org/2017/07/02/2016-05-04-第24个五四青年节/</id>
     <published>2017-07-02T06:48:19.000Z</published>
     <updated>2017-07-02T06:48:19.000Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><img src="/assets/images/2016-11-19/jobs-crafts.jpg" alt="works"></p><blockquote><p>   摘要: 书画，是书与画的组合体，在中国是指书法、国画的统称。书法是伴随着汉字的产生而产生，又伴随着汉字的发展而发展。它从图画，符号到创造、定型，由大篆到小篆，由篆而隶、楷、行、草各种文字形体逐渐形成。中国画注重达意畅神与线条造型，讲究法书用笔和笔墨关系，以结构组织为主，色彩明暗为辅，诗、书、印、款识与画意结合为艺术特征。其绘画形式有大写意、小写意、工笔、界画、泼彩等，其表现形式有长卷、中堂、卷轴、册页、扇面等。以下是一个书法字画的Photoshop简单制作教程分享给大家，主要知识点：图层（Layer）、字体(Fonts)、选区工具(Select)、移动工具（Move）、滤镜（Filter）等.</p></blockquote><ul><li><p><strong>第一步，创建画布：</strong></p><p>打开文件(F)菜单，选择新建(N)，创建一个宽100cm，高36cm的画布：</p><p><img src="/assets/images/2016-11-19/canvas-complete.png" alt="canvas-complete"></p><blockquote><p>知识点：从纸张上，书画可分为长卷、中堂、卷轴、册页、扇面等；从文字排列形式上，书画可分为横、纵、方和扁形四种。 其中以横、纵居多，横者装裱后更为好看些。</p></blockquote></li><li><p><strong>第二步，制作宣纸：</strong></p><p>选取一张中意的宣纸图片作为原材料，经过剪切复制等加工处理，铺满整个画布。</p><p><img src="/assets/images/2016-11-19/paper-complete.png" alt="paper-complete"></p><blockquote><p>知识点：宣纸，按加工方法分类，宣纸分为一般可分为<code>生宣</code>，<code>熟宣</code>、<code>半熟宣</code>三种。按用料配比不同分类，又可分为<code>棉料</code>、<code>皮料</code>、<code>将净</code>三类。其中又有单宣、夹宣、二层、三层等之分，规格上有4尺、6尺、8尺、丈二、丈四、丈八等。选择上建议选择颜色单一，杂色较少的作为原材料，利于剪切拼接。</p></blockquote></li><li><p><strong>第三步，选取书画内容，如诗歌或名言。</strong><br><img src="/assets/images/2016-11-19/word-complete.png" alt="word-complete"></p><blockquote><p>知识点：建议选取名人书法字体，其一有很高的视觉美感，其二让人有熟悉感，常用字体有方正、叶根友等字体，按照书法家分有毛泽东、王羲之、颜真卿等，本例选择王羲之字体。</p></blockquote></li><li><p><strong>第四步，制作印章，加盖在字画两端：</strong></p><p>首先，制作印章周围的红圈，确定印章范围。使用选区工具，选好之后，点击菜单编辑&gt;&gt;描边，制作红圈效果。</p><p>其次，制作印章内容，以“姓名+印”形式居多。</p><p>最后，使用滤镜制作印章效果，滤镜&gt;&gt;素描&gt;&gt;撕边，滤镜&gt;&gt;画笔描边&gt;&gt;喷溅，制作出印章盖在宣纸上的效果。</p><p>姓名章：</p><p><img src="/assets/images/2016-11-19/name-sign.png" alt="name-sign"></p><p>引首章：</p><p><img src="/assets/images/2016-11-19/head-sign.png" alt="head-sign"></p><blockquote><p>知识点：书法作品上常用的几种印章有姓名章、闲章、鉴藏章。印章最初是信物，起印证作用。宋、元以后，因注重了书画题跋和署款，书家们逐渐认识到印章的艺术作用并注意在书法作品中发挥这一作用，使书、印合璧的艺术得以形成。书法作品上的印章，是书法作品中不可缺少的组成部分，缺了印章就不成为完整的书法作品。</p></blockquote><p>1）姓名章：姓名章的形状以“方形最好，圆形还可，若腰圆天然形等都不可用。” 姓名章一般分朱文（阳文）白文（阴文）两种。一幅书法作品上盖两方姓名章时，最好一朱一白，两章大小相宜。款尾用多章时，次序是先姓名章，后字、号章。</p><p>2）闲章：闲章亦称布局章，包括引首章、拦边章、压角章和腰章。比如：引首章通常盖在作品左上角，作为整体布局装饰，破除太严肃作品的死板格局等</p><p>3）鉴藏章：鉴藏章是鉴赏收藏者用章。</p></li><li><p><strong>另外，可以将制作好的印章存储为笔刷（Brush），以备后续使用。</strong></p><p>首先，选中印章选取，按住Ctrl+鼠标左键点击印章图层。</p><p>其次，点击菜单编辑&gt;&gt;定义为画笔预设,完成画笔制作。</p><p>最后，点击画笔工具，选择该笔刷后，即可使用盖章。</p><p><img src="/assets/images/2016-11-19/brush.png" alt="brush"></p></li></ul>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><pre><code>今天终于搭建起了自己的Blog了，了却了建立博客的心结，也算是一种欣慰，期间的折腾就不一一细说了。</code></pre><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;有时候想写某些东西出来的时候，又不想被所有的朋友看到，至少不像在公众社交软件上发表<br>某些东西后，引人议论或是被各种调侃。当然这种想法或许本身就有问题，对于某些人而言既然想写，<br>又何必在乎别人的看法呢？现在虽然不是第一次写博客，却是第一次在自己的博客网站上写博客，<br>Fighting！</p><p>  馨</p>]]></content>
     
     <summary type="html">
     
@@ -178,10 +155,8 @@
     
     </summary>
     
-      <category term="art" scheme="http://uiplus.org/categories/art/"/>
+      <category term="life" scheme="http://uiplus.org/categories/life/"/>
     
-    
-      <category term="photoshop" scheme="http://uiplus.org/tags/photoshop/"/>
     
   </entry>
   
@@ -204,6 +179,31 @@
     
     
       <category term="SONY-RX100 III" scheme="http://uiplus.org/tags/SONY-RX100-III/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Photoshop</title>
+    <link href="http://uiplus.org/2017/07/02/2016-11-19-Photoshop-And-Chinese-Crafts/"/>
+    <id>http://uiplus.org/2017/07/02/2016-11-19-Photoshop-And-Chinese-Crafts/</id>
+    <published>2017-07-02T06:48:19.000Z</published>
+    <updated>2017-07-02T06:48:19.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><img src="/assets/images/2016-11-19/jobs-crafts.jpg" alt="works"></p><blockquote><p>   摘要: 书画，是书与画的组合体，在中国是指书法、国画的统称。书法是伴随着汉字的产生而产生，又伴随着汉字的发展而发展。它从图画，符号到创造、定型，由大篆到小篆，由篆而隶、楷、行、草各种文字形体逐渐形成。中国画注重达意畅神与线条造型，讲究法书用笔和笔墨关系，以结构组织为主，色彩明暗为辅，诗、书、印、款识与画意结合为艺术特征。其绘画形式有大写意、小写意、工笔、界画、泼彩等，其表现形式有长卷、中堂、卷轴、册页、扇面等。以下是一个书法字画的Photoshop简单制作教程分享给大家，主要知识点：图层（Layer）、字体(Fonts)、选区工具(Select)、移动工具（Move）、滤镜（Filter）等.</p></blockquote><ul><li><p><strong>第一步，创建画布：</strong></p><p>打开文件(F)菜单，选择新建(N)，创建一个宽100cm，高36cm的画布：</p><p><img src="/assets/images/2016-11-19/canvas-complete.png" alt="canvas-complete"></p><blockquote><p>知识点：从纸张上，书画可分为长卷、中堂、卷轴、册页、扇面等；从文字排列形式上，书画可分为横、纵、方和扁形四种。 其中以横、纵居多，横者装裱后更为好看些。</p></blockquote></li><li><p><strong>第二步，制作宣纸：</strong></p><p>选取一张中意的宣纸图片作为原材料，经过剪切复制等加工处理，铺满整个画布。</p><p><img src="/assets/images/2016-11-19/paper-complete.png" alt="paper-complete"></p><blockquote><p>知识点：宣纸，按加工方法分类，宣纸分为一般可分为<code>生宣</code>，<code>熟宣</code>、<code>半熟宣</code>三种。按用料配比不同分类，又可分为<code>棉料</code>、<code>皮料</code>、<code>将净</code>三类。其中又有单宣、夹宣、二层、三层等之分，规格上有4尺、6尺、8尺、丈二、丈四、丈八等。选择上建议选择颜色单一，杂色较少的作为原材料，利于剪切拼接。</p></blockquote></li><li><p><strong>第三步，选取书画内容，如诗歌或名言。</strong><br><img src="/assets/images/2016-11-19/word-complete.png" alt="word-complete"></p><blockquote><p>知识点：建议选取名人书法字体，其一有很高的视觉美感，其二让人有熟悉感，常用字体有方正、叶根友等字体，按照书法家分有毛泽东、王羲之、颜真卿等，本例选择王羲之字体。</p></blockquote></li><li><p><strong>第四步，制作印章，加盖在字画两端：</strong></p><p>首先，制作印章周围的红圈，确定印章范围。使用选区工具，选好之后，点击菜单编辑&gt;&gt;描边，制作红圈效果。</p><p>其次，制作印章内容，以“姓名+印”形式居多。</p><p>最后，使用滤镜制作印章效果，滤镜&gt;&gt;素描&gt;&gt;撕边，滤镜&gt;&gt;画笔描边&gt;&gt;喷溅，制作出印章盖在宣纸上的效果。</p><p>姓名章：</p><p><img src="/assets/images/2016-11-19/name-sign.png" alt="name-sign"></p><p>引首章：</p><p><img src="/assets/images/2016-11-19/head-sign.png" alt="head-sign"></p><blockquote><p>知识点：书法作品上常用的几种印章有姓名章、闲章、鉴藏章。印章最初是信物，起印证作用。宋、元以后，因注重了书画题跋和署款，书家们逐渐认识到印章的艺术作用并注意在书法作品中发挥这一作用，使书、印合璧的艺术得以形成。书法作品上的印章，是书法作品中不可缺少的组成部分，缺了印章就不成为完整的书法作品。</p></blockquote><p>1）姓名章：姓名章的形状以“方形最好，圆形还可，若腰圆天然形等都不可用。” 姓名章一般分朱文（阳文）白文（阴文）两种。一幅书法作品上盖两方姓名章时，最好一朱一白，两章大小相宜。款尾用多章时，次序是先姓名章，后字、号章。</p><p>2）闲章：闲章亦称布局章，包括引首章、拦边章、压角章和腰章。比如：引首章通常盖在作品左上角，作为整体布局装饰，破除太严肃作品的死板格局等</p><p>3）鉴藏章：鉴藏章是鉴赏收藏者用章。</p></li><li><p><strong>另外，可以将制作好的印章存储为笔刷（Brush），以备后续使用。</strong></p><p>首先，选中印章选取，按住Ctrl+鼠标左键点击印章图层。</p><p>其次，点击菜单编辑&gt;&gt;定义为画笔预设,完成画笔制作。</p><p>最后，点击画笔工具，选择该笔刷后，即可使用盖章。</p><p><img src="/assets/images/2016-11-19/brush.png" alt="brush"></p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+      <category term="art" scheme="http://uiplus.org/categories/art/"/>
+    
+    
+      <category term="photoshop" scheme="http://uiplus.org/tags/photoshop/"/>
     
   </entry>
   
@@ -283,31 +283,6 @@
   </entry>
   
   <entry>
-    <title>免费开源的思维导图软件推荐</title>
-    <link href="http://uiplus.org/2017/07/02/2017-04-27-%E5%85%8D%E8%B4%B9%E5%BC%80%E6%BA%90%E7%9A%84%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
-    <id>http://uiplus.org/2017/07/02/2017-04-27-免费开源的思维导图软件推荐/</id>
-    <published>2017-07-02T06:48:19.000Z</published>
-    <updated>2017-07-02T06:48:19.000Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>思维导图也叫心智图，是一项流行的全脑式学习方法，用来表示词，思路，任务或其他与围绕着一个中央关键词或想法项目的示意图。<br>通过径向，图形和非线性的方式提出意见，思维导图鼓励头脑风暴的方法来规划和组织任务。<br>虽然思维导图的分支表示分层树形结构，其放射状排列扰乱通常与呈现更加线性的视觉线索层次相关概念的优先次序。</p><ol><li><p>XMind<br>XMind 是一个开源项目，这意味着它可以免费下载并自由地使用。<br>XMind 也有 Plus/Pro 版本，提供更专业的功能。<br>除了地图结构， XMind 同时也提供树，逻辑和鱼骨图，具有内置拼写检查，搜索，加密，甚至是音频笔记功能。</p></li><li><p>Coggle<br>Coggle 是一个免费的在线协作思维导图工具，让您直观地用一个精美的呈现分支结构定义的连接。<br>它可以让你制作出漂亮的笔记，方便快捷。与朋友和同事分享，和他们协同工作，展现你的想法。</p></li><li><p>FreeMind<br>FreeMind 是用 Java 编写的免费心智图软件。最近的发展希望把它变成高生产力的工具。<br>操作 FreeMind 的导航比 MindManager 快，因为它有一键式“折叠/展开”和“跟随链接”操作。</p></li><li><p>MindManager<br>MindManager 是倍受赞誉、最好的思维导图软件。<br>这款强大的思维导图工具可以让你在一个单一的视图组织你的想法，在这里你可以轻松地拖放操作和优先考虑你的想法。<br>添加图像，视频，超链接和附件都非常简单，让你简单的把想法付诸行动了。<br>想了解更多信息，可以关注中文官网：<a href="http://www.mindmanager.cc/。" target="_blank" rel="external">http://www.mindmanager.cc/。</a></p></li></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
-      
-    
-    </summary>
-    
-      <category term="tool" scheme="http://uiplus.org/categories/tool/"/>
-    
-    
-      <category term="思维导图" scheme="http://uiplus.org/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Linux文件查找命令find和whereis用法</title>
     <link href="http://uiplus.org/2017/07/02/2017-04-27-Linux%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE%E5%91%BD%E4%BB%A4find%E5%92%8Cwhereis%E7%94%A8%E6%B3%95/"/>
     <id>http://uiplus.org/2017/07/02/2017-04-27-Linux文件查找命令find和whereis用法/</id>
@@ -354,6 +329,31 @@
     
     
       <category term="nginx" scheme="http://uiplus.org/tags/nginx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>免费开源的思维导图软件推荐</title>
+    <link href="http://uiplus.org/2017/07/02/2017-04-27-%E5%85%8D%E8%B4%B9%E5%BC%80%E6%BA%90%E7%9A%84%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
+    <id>http://uiplus.org/2017/07/02/2017-04-27-免费开源的思维导图软件推荐/</id>
+    <published>2017-07-02T06:48:19.000Z</published>
+    <updated>2017-07-02T06:48:19.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>思维导图也叫心智图，是一项流行的全脑式学习方法，用来表示词，思路，任务或其他与围绕着一个中央关键词或想法项目的示意图。<br>通过径向，图形和非线性的方式提出意见，思维导图鼓励头脑风暴的方法来规划和组织任务。<br>虽然思维导图的分支表示分层树形结构，其放射状排列扰乱通常与呈现更加线性的视觉线索层次相关概念的优先次序。</p><ol><li><p>XMind<br>XMind 是一个开源项目，这意味着它可以免费下载并自由地使用。<br>XMind 也有 Plus/Pro 版本，提供更专业的功能。<br>除了地图结构， XMind 同时也提供树，逻辑和鱼骨图，具有内置拼写检查，搜索，加密，甚至是音频笔记功能。</p></li><li><p>Coggle<br>Coggle 是一个免费的在线协作思维导图工具，让您直观地用一个精美的呈现分支结构定义的连接。<br>它可以让你制作出漂亮的笔记，方便快捷。与朋友和同事分享，和他们协同工作，展现你的想法。</p></li><li><p>FreeMind<br>FreeMind 是用 Java 编写的免费心智图软件。最近的发展希望把它变成高生产力的工具。<br>操作 FreeMind 的导航比 MindManager 快，因为它有一键式“折叠/展开”和“跟随链接”操作。</p></li><li><p>MindManager<br>MindManager 是倍受赞誉、最好的思维导图软件。<br>这款强大的思维导图工具可以让你在一个单一的视图组织你的想法，在这里你可以轻松地拖放操作和优先考虑你的想法。<br>添加图像，视频，超链接和附件都非常简单，让你简单的把想法付诸行动了。<br>想了解更多信息，可以关注中文官网：<a href="http://www.mindmanager.cc/。" target="_blank" rel="external">http://www.mindmanager.cc/。</a></p></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+      <category term="tool" scheme="http://uiplus.org/categories/tool/"/>
+    
+    
+      <category term="思维导图" scheme="http://uiplus.org/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/"/>
     
   </entry>
   

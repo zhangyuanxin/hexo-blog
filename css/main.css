@@ -1570,6 +1570,13 @@ pre .javascript .function {
 .qr-image-icon span {
   font-weight: bolder;
 }
+.post-copyright {
+  margin: 2em 0 0;
+  padding: 0.5em 1em;
+  border-left: 3px solid #ff1700;
+  background-color: #f9f9f9;
+  list-style: none;
+}
 .post-wordcount {
   display: inline-block;
 }
@@ -1813,7 +1820,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #18ff1f;
+  background: #5dff73;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3009,6 +3016,17 @@ pre .javascript .function {
 }
 .with-love {
   color: #ff71a8;
+}
+.comments {
+  margin: 40px 0 0;
+}
+@media (max-width: 767px) {
+  .comments {
+    marin: 20px 0 0;
+  }
+}
+.posts-expand .post-tags {
+  text-align: left;
 }
 @-moz-keyframes heartAnimate {
   0%, 100% {
