@@ -37,15 +37,12 @@
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[ThoughtWorks]]></title>
-    <url>%2F2017%2F07%2F02%2F2016-05-06-ThoughtWorks%EF%BC%8DConference%2F</url>
-    <content type="text"><![CDATA[公司接到北京ThoughtWorks组织的峰会邀请，公司组团去北京听演讲学习，内容待补充…]]></content>
+    <title><![CDATA[The Youth Day]]></title>
+    <url>%2F2017%2F07%2F02%2F2016-05-04-%E7%AC%AC24%E4%B8%AA%E4%BA%94%E5%9B%9B%E9%9D%92%E5%B9%B4%E8%8A%82%2F</url>
+    <content type="text"><![CDATA[今天终于搭建起了自己的Blog了，了却了建立博客的心结，也算是一种欣慰，期间的折腾就不一一细说了。 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;有时候想写某些东西出来的时候，又不想被所有的朋友看到，至少不像在公众社交软件上发表某些东西后，引人议论或是被各种调侃。当然这种想法或许本身就有问题，对于某些人而言既然想写，又何必在乎别人的看法呢？现在虽然不是第一次写博客，却是第一次在自己的博客网站上写博客，Fighting！ 馨]]></content>
       <categories>
         <category>life</category>
       </categories>
-      <tags>
-        <tag>旅游</tag>
-      </tags>
   </entry>
   <entry>
     <title><![CDATA[Android Problems]]></title>
@@ -81,12 +78,15 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[The Youth Day]]></title>
-    <url>%2F2017%2F07%2F02%2F2016-05-04-%E7%AC%AC24%E4%B8%AA%E4%BA%94%E5%9B%9B%E9%9D%92%E5%B9%B4%E8%8A%82%2F</url>
-    <content type="text"><![CDATA[今天终于搭建起了自己的Blog了，了却了建立博客的心结，也算是一种欣慰，期间的折腾就不一一细说了。 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;有时候想写某些东西出来的时候，又不想被所有的朋友看到，至少不像在公众社交软件上发表某些东西后，引人议论或是被各种调侃。当然这种想法或许本身就有问题，对于某些人而言既然想写，又何必在乎别人的看法呢？现在虽然不是第一次写博客，却是第一次在自己的博客网站上写博客，Fighting！ 馨]]></content>
+    <title><![CDATA[ThoughtWorks]]></title>
+    <url>%2F2017%2F07%2F02%2F2016-05-06-ThoughtWorks%EF%BC%8DConference%2F</url>
+    <content type="text"><![CDATA[公司接到北京ThoughtWorks组织的峰会邀请，公司组团去北京听演讲学习，内容待补充…]]></content>
       <categories>
         <category>life</category>
       </categories>
+      <tags>
+        <tag>旅游</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[Android ListView]]></title>
