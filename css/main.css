@@ -1541,35 +1541,6 @@ pre .javascript .function {
 .fancybox-close:hover {
   border: none;
 }
-.qr-container {
-  padding: 10px 0;
-  margin: 20px auto;
-  width: 90%;
-  text-align: center;
-}
-@media (max-width: 767px) {
-  .qr-container {
-    display: none;
-  }
-}
-.qr-image-box {
-  text-align: center;
-  margin: 0 auto;
-}
-.qr-image-icon {
-  width: 100px;
-  height: 100px;
-  background-image: url("../../images/pay/dashang.png");
-  background-size: 50px 50px;
-  background-position: center;
-  background-repeat: no-repeat;
-  text-align: center;
-  margin: 0 auto;
-  cursor: pointer;
-}
-.qr-image-icon span {
-  font-weight: bolder;
-}
 .post-copyright {
   margin: 2em 0 0;
   padding: 0.5em 1em;
@@ -1820,7 +1791,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #5dff73;
+  background: #e7a3eb;
 }
 .links-of-blogroll {
   font-size: 13px;
