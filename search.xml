@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[平安夜]]></title>
-    <url>%2F2018%2F12%2F25%2F%E5%B9%B3%E5%AE%89%E5%A4%9C%2F</url>
-    <content type="text"><![CDATA[平安夜快乐！]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[Nginx Setup]]></title>
-    <url>%2F2018%2F12%2F24%2F2016-11-07-Nginx-Setup%2F</url>
-    <content type="text"><![CDATA[摘要: 使用源的方式安装nginx的操作方式. 安装环境是 阿里云Ubuntu Server 14. 在源中添加资源 在/etc/apt/sources.lst中 添加下面两源： 12eb http://nginx.org/packages/mainline/ubuntu/ trusty nginxdeb-src http://nginx.org/packages/mainline/ubuntu/ trusty nginx 添加key到文件中 123cd /etc/aptwget http://nginx.org/keys/nginx_signing.keyapt-key add nginx_signing.key 安装nginx 12apt-get updateapt-get install nginx 检查安装是否成功 1/usr/sbin/nginx -V]]></content>
+    <url>%2F2019%2F01%2F21%2F2016-11-07-Nginx-Setup%2F</url>
+    <content type="text"><![CDATA[Nginx是由伊戈尔·赛索耶夫（俄罗斯人）于2004年10月使用C语言开发并发布，源代码以类BSD许可证发布。 Nginx是一款轻量级的Web 服务器/反向代理服务器及电子邮件（IMAP/POP3）代理服务器，并在一个BSD-like 协议下发行。其特点是占有内存少，并发能力强。在连接高并发的情况下，Nginx是Apache服务不错的替代品，能够支持高达 50,000 个并发连接数的响应。以下简单介绍如何使用源方式按安装Nginx（Aliyun Ubuntu Server 14）。 在源中添加资源在/etc/apt/sources.lst中 添加下面两源： 12eb http://nginx.org/packages/mainline/ubuntu/ trusty nginxdeb-src http://nginx.org/packages/mainline/ubuntu/ trusty nginx 添加key到文件中 123cd /etc/aptwget http://nginx.org/keys/nginx_signing.keyapt-key add nginx_signing.key 安装nginx 12apt-get updateapt-get install nginx 检查安装是否成功 1/usr/sbin/nginx -V]]></content>
       <categories>
         <category>code</category>
       </categories>
@@ -17,16 +12,20 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[VI Commands]]></title>
-    <url>%2F2017%2F07%2F02%2F2016-05-28-Vi-Editor-Commands%2F</url>
-    <content type="text"><![CDATA[由于最近工作经常要用到linux系统，但是命令都不是太熟悉，现在开始慢慢总结，不断练习，不断学习吧！ # vi的使用教程（比较适合新手学习vi）： 为什么要学习vi命令 vi使用模式 vi常用命令 文件的打开关闭保存 插入文本或新建行 移动光标、删除、恢复字符或行 搜索 其他 # 为什么要学习vi命令 ？vi是visual interface的缩写，vim是vi IMproved(增强版的vi)。 Linux很多发行版默认都安装了vi(vim)。 vi/vim是Linux上最常用且很流行的编辑器（除此之外还有emacs、atom等）。 熟练使用vi命令可以提高工作效率。 vim可以使代码高亮显示。 # vi有3个模式：插入模式、命令模式、低行模式 插入模式：在此模式下可以输入字符，按ESC将回到命令模式。 命令模式：可以移动光标、删除字符等。 低行模式：可以保存文件、退出vi、设置vi、查找等功能(低行模式也可以看作是命令模式里的)。 # vi常用命令1.文件的打开、保存、关闭操作(vi命令模式下使用) 命令 释义说明 vi [file] 打开file文件 :w 保存文件 :w [file] 保存至file文件 :q 退出编辑器(未修改) :q! 退出编辑器（不保存修改） :wq 退出编辑器（保存修改） 2.插入模式：插入文本或行(vi命令模式下使用，执行下面命令后将进入插入模式，按ESC键可退出插入模式) 命令 释义说明 a 在当前光标位置的右边添加文本 i 在当前光标位置的左边添加文本 A 在当前行的末尾位置添加文本 I 在当前行的开始处添加文本(非空字符的行首) O 在当前行的上面新建一行 o 在当前行的下面新建一行 R 替换(覆盖)当前光标位置及后面的若干文本 J 合并光标所在行及下一行为一行(依然在命令模式) 3.移动光标(vi命令模式下使用) 使用上下左右方向键 命令模式下： 命令 释义说明 h 向左 j 向下 k 向上 l 向右 空格键 向右 Backspace 向左 Enter 移动到下一行首 - 移动到上一行首 4.删除、恢复字符或行(vi命令模式下使用) 命令 释义说明 x 删除当前字符 nx 删除从光标开始的n个字符 dd 删除当前行 ndd 向下删除当前行在内的n行 u 撤销上一步操作 U 撤销对当前行的所有操作 5.搜索(vi命令模式下使用) 命令 释义说明 /abc 向光标下搜索abc字符串 ?abc 向光标上搜索abc字符串 n 向下搜索前一个搜素动作 N 向上搜索前一个搜索动作 6.跳至指定行(vi命令模式下使用) 命令 释义说明 n+ 向下跳n行 n- 向上跳n行 nG 跳到行号为n的行 G 跳至文件的底部 7.设置行号(vi命令模式下使用) 命令 释义说明 :set nu 显示行号 :set nonu 取消显示行号 8.复制、粘贴(vi命令模式下使用) 命令 释义说明 yy 将当前行复制到缓存区，也可以用 “ayy 复制，”a 为缓冲区，a也可以替换为a到z的任意字母，可以完成多个复制任务。 nyy 将当前行向下n行复制到缓冲区，也可以用 “anyy 复制，”a 为缓冲区，a也可以替换为a到z的任意字母，可以完成多个复制任务。 yw 复制从光标开始到词尾的字符。 nyw 复制从光标开始的n个单词。 y^ 复制从光标到行首的内容。 y$ 复制从光标到行尾的内容。 p 粘贴剪切板里的内容在光标后，如果使用了前面的自定义缓冲区，建议使用”ap 进行粘贴。 P 粘贴剪切板里的内容在光标前，如果使用了前面的自定义缓冲区，建议使用”aP 进行粘贴。 9.替换(vi命令模式下使用) 命令 释义说明 :s/old/new 用new替换行中首次出现的old :s/old/new/g 用new替换行中所有的old :n,m s/old/new/g 用new替换从n到m行里所有的old :%s/old/new/g 用new替换当前文件里所有的old 10.编辑其他文件 命令 释义说明 :e otherfilename 编辑文件名为otherfilename的文件。 11.修改文件格式 命令 释义说明 :set fileformat=unix 将文件修改为unix格式，如win下面的文本文件在linux下会出现^M。 总结：vi(vim)虽然有比较多的命令，但是只要勤加练习，相信你会很快的熟练掌握，同时也会给你的工作或学习带来更高的效率。当如果不知道自己处在什么模式时可以按2次Esc键即可回到命令模式。最后提醒一点：注意大小写！！ 参考连接：Linux上vi(vim)编辑器使用教程]]></content>
+    <title><![CDATA[Linux中提示No such file or directory解决方法]]></title>
+    <url>%2F2018%2F12%2F30%2F2017-05-12-Linux%E4%B8%AD%E6%8F%90%E7%A4%BANo%20such%20file%20or%20directory%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[解决方法 分析原因，可能因为我平台迁移碰到权限问题我们来进行权限转换 1）在Windows下转换：利用一些编辑器如UltraEdit或EditPlus等工具先将脚本编码转换，再放到Linux中执行。 转换方式如下（UltraEdit）：File–&gt;Conversions–&gt;DOS-&gt;UNIX即可。 2)方法用vim打开xxx.sh脚本文件，输入set ff： 1234567891011121314151617// 用vim打开脚本文件vi xxx.sh // 查看文件格式:set ff // 回车显示文集格式fileformat=dos// 设置文件格式:set ff=unix // 保存并退出:wq!// 再次执行sh xxx.sh 3）当然，也可以在linux中权限转换，同时支持dos和unix两种模式 12345// 确保文件有可执行权限chmod u+x \&lt;filename\&gt; // 修改文件格式vi \&lt;filename\&gt; 三种方法都可以方便快速的解决关于Linux执行.sh文件，提示No such file or directory这个问题了。]]></content>
       <categories>
-        <category>code</category>
+        <category>Linux</category>
       </categories>
       <tags>
-        <tag>linux</tag>
-        <tag>vim</tag>
+        <tag>Command</tag>
       </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[平安夜]]></title>
+    <url>%2F2018%2F12%2F25%2F%E5%B9%B3%E5%AE%89%E5%A4%9C%2F</url>
+    <content type="text"><![CDATA[平安夜快乐！]]></content>
   </entry>
   <entry>
     <title><![CDATA[Personal Plans]]></title>
@@ -144,14 +143,15 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Linux中提示No such file or directory解决方法]]></title>
-    <url>%2F2017%2F07%2F02%2F2017-05-12-Linux%E4%B8%AD%E6%8F%90%E7%A4%BANo%20such%20file%20or%20directory%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%2F</url>
-    <content type="text"><![CDATA[解决方法 分析原因，可能因为我平台迁移碰到权限问题我们来进行权限转换 1）在Windows下转换：利用一些编辑器如UltraEdit或EditPlus等工具先将脚本编码转换，再放到Linux中执行。 转换方式如下（UltraEdit）：File–&gt;Conversions–&gt;DOS-&gt;UNIX即可。 2)方法用vim打开xxx.sh脚本文件，输入set ff： 1234567891011121314151617// 用vim打开脚本文件vi xxx.sh // 查看文件格式:set ff // 回车显示文集格式fileformat=dos// 设置文件格式:set ff=unix // 保存并退出:wq!// 再次执行sh xxx.sh 3）当然，也可以在linux中权限转换，同时支持dos和unix两种模式 12345// 确保文件有可执行权限chmod u+x \&lt;filename\&gt; // 修改文件格式vi \&lt;filename\&gt; 三种方法都可以方便快速的解决关于Linux执行.sh文件，提示No such file or directory这个问题了。]]></content>
+    <title><![CDATA[VI Commands]]></title>
+    <url>%2F2017%2F07%2F02%2F2016-05-28-Vi-Editor-Commands%2F</url>
+    <content type="text"><![CDATA[由于最近工作经常要用到linux系统，但是命令都不是太熟悉，现在开始慢慢总结，不断练习，不断学习吧！ # vi的使用教程（比较适合新手学习vi）： 为什么要学习vi命令 vi使用模式 vi常用命令 文件的打开关闭保存 插入文本或新建行 移动光标、删除、恢复字符或行 搜索 其他 # 为什么要学习vi命令 ？vi是visual interface的缩写，vim是vi IMproved(增强版的vi)。 Linux很多发行版默认都安装了vi(vim)。 vi/vim是Linux上最常用且很流行的编辑器（除此之外还有emacs、atom等）。 熟练使用vi命令可以提高工作效率。 vim可以使代码高亮显示。 # vi有3个模式：插入模式、命令模式、低行模式 插入模式：在此模式下可以输入字符，按ESC将回到命令模式。 命令模式：可以移动光标、删除字符等。 低行模式：可以保存文件、退出vi、设置vi、查找等功能(低行模式也可以看作是命令模式里的)。 # vi常用命令1.文件的打开、保存、关闭操作(vi命令模式下使用) 命令 释义说明 vi [file] 打开file文件 :w 保存文件 :w [file] 保存至file文件 :q 退出编辑器(未修改) :q! 退出编辑器（不保存修改） :wq 退出编辑器（保存修改） 2.插入模式：插入文本或行(vi命令模式下使用，执行下面命令后将进入插入模式，按ESC键可退出插入模式) 命令 释义说明 a 在当前光标位置的右边添加文本 i 在当前光标位置的左边添加文本 A 在当前行的末尾位置添加文本 I 在当前行的开始处添加文本(非空字符的行首) O 在当前行的上面新建一行 o 在当前行的下面新建一行 R 替换(覆盖)当前光标位置及后面的若干文本 J 合并光标所在行及下一行为一行(依然在命令模式) 3.移动光标(vi命令模式下使用) 使用上下左右方向键 命令模式下： 命令 释义说明 h 向左 j 向下 k 向上 l 向右 空格键 向右 Backspace 向左 Enter 移动到下一行首 - 移动到上一行首 4.删除、恢复字符或行(vi命令模式下使用) 命令 释义说明 x 删除当前字符 nx 删除从光标开始的n个字符 dd 删除当前行 ndd 向下删除当前行在内的n行 u 撤销上一步操作 U 撤销对当前行的所有操作 5.搜索(vi命令模式下使用) 命令 释义说明 /abc 向光标下搜索abc字符串 ?abc 向光标上搜索abc字符串 n 向下搜索前一个搜素动作 N 向上搜索前一个搜索动作 6.跳至指定行(vi命令模式下使用) 命令 释义说明 n+ 向下跳n行 n- 向上跳n行 nG 跳到行号为n的行 G 跳至文件的底部 7.设置行号(vi命令模式下使用) 命令 释义说明 :set nu 显示行号 :set nonu 取消显示行号 8.复制、粘贴(vi命令模式下使用) 命令 释义说明 yy 将当前行复制到缓存区，也可以用 “ayy 复制，”a 为缓冲区，a也可以替换为a到z的任意字母，可以完成多个复制任务。 nyy 将当前行向下n行复制到缓冲区，也可以用 “anyy 复制，”a 为缓冲区，a也可以替换为a到z的任意字母，可以完成多个复制任务。 yw 复制从光标开始到词尾的字符。 nyw 复制从光标开始的n个单词。 y^ 复制从光标到行首的内容。 y$ 复制从光标到行尾的内容。 p 粘贴剪切板里的内容在光标后，如果使用了前面的自定义缓冲区，建议使用”ap 进行粘贴。 P 粘贴剪切板里的内容在光标前，如果使用了前面的自定义缓冲区，建议使用”aP 进行粘贴。 9.替换(vi命令模式下使用) 命令 释义说明 :s/old/new 用new替换行中首次出现的old :s/old/new/g 用new替换行中所有的old :n,m s/old/new/g 用new替换从n到m行里所有的old :%s/old/new/g 用new替换当前文件里所有的old 10.编辑其他文件 命令 释义说明 :e otherfilename 编辑文件名为otherfilename的文件。 11.修改文件格式 命令 释义说明 :set fileformat=unix 将文件修改为unix格式，如win下面的文本文件在linux下会出现^M。 总结：vi(vim)虽然有比较多的命令，但是只要勤加练习，相信你会很快的熟练掌握，同时也会给你的工作或学习带来更高的效率。当如果不知道自己处在什么模式时可以按2次Esc键即可回到命令模式。最后提醒一点：注意大小写！！ 参考连接：Linux上vi(vim)编辑器使用教程]]></content>
       <categories>
-        <category>Linux</category>
+        <category>code</category>
       </categories>
       <tags>
-        <tag>command</tag>
+        <tag>linux</tag>
+        <tag>vim</tag>
       </tags>
   </entry>
   <entry>

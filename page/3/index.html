@@ -47,12 +47,6 @@
 
 
 
-  
-  
-    
-  
-  <link href="https://cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet" type="text/css" />
-
 
 
 
@@ -128,7 +122,7 @@
     root: '/',
     scheme: 'Pisces',
     sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":true},
-    fancybox: true,
+    fancybox: false,
     motion: true,
     duoshuo: {
       userId: '0',
@@ -1077,7 +1071,7 @@ XMindXMind 是一个开源项目，这意味着它可以免费下载并自由地
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://uiplus.org/2017/07/02/2017-05-12-Linux中提示No such file or directory解决方法/">
+    <link itemprop="mainEntityOfPage" href="http://uiplus.org/2017/07/02/2016-05-28-Vi-Editor-Commands/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="斯是陋室">
@@ -1096,7 +1090,7 @@ XMindXMind 是一个开源项目，这意味着它可以免费下载并自由地
         
           <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/07/02/2017-05-12-Linux中提示No such file or directory解决方法/" itemprop="url">Linux中提示No such file or directory解决方法</a></h2>
+                <a class="post-title-link" href="/2017/07/02/2016-05-28-Vi-Editor-Commands/" itemprop="url">VI Commands</a></h2>
         
 
         <div class="post-meta">
@@ -1131,8 +1125,8 @@ XMindXMind 是一个开源项目，这意味着它可以免费下载并自由地
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Linux/" itemprop="url" rel="index">
-                    <span itemprop="name">Linux</span>
+                  <a href="/categories/code/" itemprop="url" rel="index">
+                    <span itemprop="name">code</span>
                   </a>
                 </span>
 
@@ -1148,7 +1142,7 @@ XMindXMind 是一个开源项目，这意味着它可以免费下载并自由地
 
           
           
-             <span id="/2017/07/02/2017-05-12-Linux中提示No such file or directory解决方法/" class="leancloud_visitors" data-flag-title="Linux中提示No such file or directory解决方法">
+             <span id="/2017/07/02/2016-05-28-Vi-Editor-Commands/" class="leancloud_visitors" data-flag-title="VI Commands">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -1175,7 +1169,7 @@ XMindXMind 是一个开源项目，这意味着它可以免费下载并自由地
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  226
+                  1,297
                 </span>
               
 
@@ -1191,7 +1185,7 @@ XMindXMind 是一个开源项目，这意味着它可以免费下载并自由地
                   <span class="post-meta-item-text">阅读时长</span>
                 
                 <span title="阅读时长">
-                  1
+                  5
                 </span>
               
             </div>
@@ -1211,18 +1205,24 @@ XMindXMind 是一个开源项目，这意味着它可以免费下载并自由地
       
         
           
-          解决方法
-分析原因，可能因为我平台迁移碰到权限问题我们来进行权限转换
-1）在Windows下转换：利用一些编辑器如UltraEdit或EditPlus等工具先将脚本编码转换，再放到Linux中执行。
+          
+由于最近工作经常要用到linux系统，但是命令都不是太熟悉，现在开始慢慢总结，不断练习，不断学习吧！
 
-转换方式如下（UltraEdit）：File–&gt;Conversions–&gt;DOS-&gt;UNIX即可。
+# vi的使用教程（比较适合新手学习vi）：
+为什么要学习vi命令
+vi使用模式
+vi常用命令
+文件的打开关闭保存
+插入文本或新建行
+移动光标、删除、恢复字符或行
+搜索
+其他
 
-2)方法用vim打开xxx.sh脚本文件，输入set ff：
-12345678
+# 为什么要学习vi命令 ？vi是visual interface的缩写，vim是vi IMproved(增强版的v
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/07/02/2017-05-12-Linux中提示No such file or directory解决方法/#more" rel="contents">
+            <a class="btn" href="/2017/07/02/2016-05-28-Vi-Editor-Commands/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1338,7 +1338,7 @@ XMindXMind 是一个开源项目，这意味着它可以免费下载并自由地
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-count">12</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -1427,7 +1427,7 @@ XMindXMind 是一个开源项目，这意味着它可以免费下载并自由地
         <div class="copyright" >
   
   &copy;  2015 - 
-  <span itemprop="copyrightYear">2018</span>
+  <span itemprop="copyrightYear">2019</span>
   <span class="with-love" id="heart">
     <i class="fa fa-heart"></i>
   </span>
@@ -1480,10 +1480,6 @@ XMindXMind 是一个开源项目，这意味着它可以免费下载并自由地
 
 
 
-  
-
-
-  
 
 
 
@@ -1509,12 +1505,6 @@ XMindXMind 是一个开源项目，这意味着它可以免费下载并自由地
 
   
   <script type="text/javascript" src="https://cdn.bootcss.com/velocity/1.2.1/velocity.ui.min.js"></script>
-
-  
-  <script type="text/javascript" src="https://cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
-
-  
-  <script type="text/javascript" src="https://cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
 
 
   
@@ -1722,6 +1712,21 @@ XMindXMind 是一个开源项目，这意味着它可以免费下载并自由地
 
 
   
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
 
   
 
